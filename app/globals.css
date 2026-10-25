@@ -1,26 +1,170 @@
 @import "tailwindcss";
 
+@theme {
+  --font-serif: var(--font-serif), Newsreader, Georgia, serif;
+  --font-sans: var(--font-sans), Inter, -apple-system, sans-serif;
+  --font-mono: var(--font-mono), "JetBrains Mono", monospace;
+
+  /* World-Class Nordic-Fintech Bespoke Palette (Inspired by Seafoam / Pine Obsidian / Mint Design) */
+  --color-canvas: #edf6f2;
+  --color-canvas-subtle: #f4faf7;
+  --color-canvas-muted: #e4f1eb;
+
+  /* Card Surfaces */
+  --color-surface-white: #ffffff;
+  --color-surface-card: #f8fcfa;
+  --color-surface-dark: #0a1d16;
+  --color-surface-dark-subtle: #10261e;
+
+  /* Deep Velvet Forest Obsidian */
+  --color-pine-950: #061610;
+  --color-pine-900: #0a1d16;
+  --color-pine-850: #0f271e;
+  --color-pine-800: #14352a;
+  --color-pine-700: #1c493a;
+  --color-pine-600: #26634f;
+  --color-pine-500: #338167;
+  --color-pine-200: #b8ded0;
+  --color-pine-100: #d4ede3;
+  --color-pine-50: #edf7f3;
+
+  /* Electric Radiant Mint Accents */
+  --color-mint-500: #00e599;
+  --color-mint-400: #1affaa;
+  --color-mint-600: #00cc88;
+  --color-mint-100: #e0fbf1;
+  --color-mint-50: #effdf7;
+
+  /* Hairlines & Borders */
+  --color-hairline: #d3e5dc;
+  --color-hairline-subtle: #e2eee7;
+  --color-hairline-dark: #1e3d31;
+
+  /* Sophisticated Inks */
+  --color-ink-950: #071912;
+  --color-ink-900: #0d251c;
+  --color-ink-800: #18382c;
+  --color-ink-700: #254d3e;
+  --color-ink-600: #3c6554;
+  --color-ink-500: #587f6e;
+  --color-ink-400: #7b9e8f;
+  --color-ink-300: #a7c2b6;
+  --color-ink-200: #cfe0d8;
+  --color-ink-100: #e7f0ec;
+  --color-ink-50: #f2f7f4;
+
+  /* Semantic Gain & Loss */
+  --color-profit: #00a86b;
+  --color-profit-bg: #e6f9f1;
+  --color-loss: #e63946;
+  --color-loss-bg: #fdf0f1;
+
+  /* Accent Lilac / Violet */
+  --color-accent-lavender: #d6c7ff;
+  --color-accent-purple: #7c3aed;
+
+  /* Backward Compatibility Aliases */
+  --color-ivory: #edf6f2;
+  --color-paper: #ffffff;
+  --color-paper-subtle: #f4faf7;
+  --color-sage-50: #f4faf7;
+  --color-sage-100: #e5f2ec;
+  --color-sage-200: #cfe4da;
+  --color-forest-950: #061610;
+  --color-forest-900: #0a1d16;
+  --color-forest-800: #14352a;
+  --color-forest-100: #d4ede3;
+  --color-forest-50: #edf7f3;
+  --color-charcoal-950: #071912;
+  --color-charcoal-900: #0d251c;
+  --color-charcoal-800: #18382c;
+  --color-charcoal-500: #587f6e;
+  --color-charcoal-100: #e7f0ec;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #edf6f2;
+  --foreground: #071912;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-serif {
+  font-family: var(--font-serif), Newsreader, Georgia, serif;
+}
+
+.font-sans {
+  font-family: var(--font-sans), Inter, sans-serif;
+}
+
+.font-mono {
+  font-family: var(--font-mono), "JetBrains Mono", monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Hairline rule borders */
+.border-hairline {
+  border-color: var(--color-hairline);
+}
+
+.border-hairline-subtle {
+  border-color: var(--color-hairline-subtle);
+}
+
+/* Hide scrollbars for clean horizontal tab rows */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom refined scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #edf6f2;
+}
+::-webkit-scrollbar-thumb {
+  background: #c3dacf;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9ebbaf;
+}
+
+/* Tactile Pill Card Shadow */
+.shadow-pill-sm {
+  box-shadow: 0 2px 8px -2px rgba(10, 29, 22, 0.06), 0 1px 3px -1px rgba(10, 29, 22, 0.04);
+}
+.shadow-pill-md {
+  box-shadow: 0 8px 24px -6px rgba(10, 29, 22, 0.08), 0 2px 6px -1px rgba(10, 29, 22, 0.04);
+}
+.shadow-pill-lg {
+  box-shadow: 0 16px 40px -12px rgba(10, 29, 22, 0.14), 0 4px 12px -2px rgba(10, 29, 22, 0.06);
+}
+
+/* Suppress Next.js dev overlay indicator in screenshots and demo preview */
+nextjs-portal,
+[data-nextjs-toast],
+#next-route-announcer {
+  display: none !important;
 }
