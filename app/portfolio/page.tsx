@@ -220,7 +220,7 @@ export default function PortfolioPage() {
                       Top Sector
                     </span>
                     <span className="font-bold text-[#071912] text-xs">
-                      {diversification.topSector} ({diversification.topSectorWeight}%)
+                      {diversification.maxSectorName} ({diversification.maxSectorWeight}%)
                     </span>
                   </div>
                   <div className="p-3 rounded-xl bg-[#F4FAF7] border border-[#D3E5DC]">

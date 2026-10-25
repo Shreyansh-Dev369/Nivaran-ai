@@ -109,7 +109,7 @@ export function PortfolioAreaChart({
   // Nifty 50 line (Coral)
   const niftyPath = points.reduce((acc, p, idx) => {
     const y = padTop + plotHeight - ((p.benchmarkNifty - minVal) / valRange) * plotHeight;
-    return idx === 0 ? `M ${p.x.toFixed(1)} ${y.toFixed(1)}` : `${acc} L ${p.x.toFixed(1)} ${y.y ? y.toFixed(1) : y.toFixed(1)}`;
+    return idx === 0 ? `M ${p.x.toFixed(1)} ${y.toFixed(1)}` : `${acc} L ${p.x.toFixed(1)} ${y.toFixed(1)}`;
   }, "");
 
   // Sensex line (Amber)

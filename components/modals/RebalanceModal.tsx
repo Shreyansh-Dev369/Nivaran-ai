@@ -106,11 +106,11 @@ export function RebalanceModal({ isOpen, onClose }: RebalanceModalProps) {
                       <td className="py-2.5 px-3 text-right font-mono">
                         {prop.action === "SELL" ? (
                           <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-[#FDF0F1] text-[#E63946]">
-                            TRIM {formatINR(prop.estimatedAmount)}
+                            TRIM {formatINR(Math.abs(prop.amountDelta))}
                           </span>
                         ) : prop.action === "BUY" ? (
                           <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-[#E6F9F1] text-[#00A86B]">
-                            ADD {formatINR(prop.estimatedAmount)}
+                            ADD {formatINR(Math.abs(prop.amountDelta))}
                           </span>
                         ) : (
                           <span className="text-[#587F6E] text-[10px]">Within Band</span>
