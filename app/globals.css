@@ -162,6 +162,135 @@ body {
   box-shadow: 0 16px 40px -12px rgba(10, 29, 22, 0.14), 0 4px 12px -2px rgba(10, 29, 22, 0.06);
 }
 
+/* ==========================================================================
+   Artistic Motion & Modern Web Design Tokens
+   Adheres to Modern Web Guidance: Individual Transform Properties & Scroll Animations
+   ========================================================================== */
+
+/* Modern Scroll Progress Indicator */
+@keyframes grow-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #00e599 0%, #00a86b 50%, #0a1d16 100%);
+  z-index: 9999;
+  transform-origin: 0 50%;
+  pointer-events: none;
+}
+
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .scroll-progress-bar {
+      animation: grow-progress auto linear;
+      animation-timeline: scroll();
+    }
+  }
+}
+
+/* Base identity transformations to guarantee stable stacking context on hover */
+.artistic-card {
+  translate: 0 0;
+  rotate: 0deg;
+  scale: 1;
+  transition: translate 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.28s ease;
+}
+
+.artistic-card:hover {
+  translate: 0 -4px;
+  box-shadow: 0 20px 40px -12px rgba(10, 29, 22, 0.12), 0 0 0 1px rgba(0, 229, 153, 0.2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .artistic-card,
+  .artistic-card:hover {
+    translate: none !important;
+    transition: none !important;
+  }
+}
+
+/* Infinite Marquee Ticker Track */
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 38s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+    overflow-x: auto;
+  }
+}
+
+/* Shimmer Light Sweep on Badges */
+@keyframes shimmer-sweep {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-badge {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.24) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer-sweep 3s infinite ease-in-out;
+}
+
+/* Ambient Breathing Aurora Orb */
+@keyframes ambient-pulse {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1) translate(0, 0);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.08) translate(-10px, 15px);
+  }
+}
+
+.animate-ambient-aurora {
+  animation: ambient-pulse 9s infinite ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-ambient-aurora {
+    animation: none !important;
+  }
+}
+
 /* Suppress Next.js dev overlay indicator in screenshots and demo preview */
 nextjs-portal,
 [data-nextjs-toast],

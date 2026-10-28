@@ -9,6 +9,7 @@ import { PortfolioAreaChart } from "../../components/charts/PortfolioAreaChart";
 import { AllocationDonutChart } from "../../components/charts/AllocationDonutChart";
 import { RebalanceModal } from "../../components/modals/RebalanceModal";
 import { AddFundsModal } from "../../components/modals/AddFundsModal";
+import { AnimatedNumber } from "../../components/ui/AnimatedNumber";
 import { calculateDiversificationScore } from "../../lib/utils/simulation-engine";
 import { INDIAN_STOCKS } from "../../lib/data/stocks";
 import {
@@ -162,13 +163,13 @@ export default function DashboardPage() {
                 </span>
                 <div className="flex flex-wrap items-center gap-3">
                   <span className="font-serif text-3xl sm:text-4xl lg:text-5xl text-white font-semibold tabular-nums tracking-tight">
-                    {formatINR(totalPortfolioValue)}
+                    <AnimatedNumber value={totalPortfolioValue} format="inr" duration={1200} />
                   </span>
 
                   {/* Signature "Rewards >" Pill Badge - Direct from Image 3 & 5 */}
                   <Link
                     href="#invite"
-                    className="inline-flex items-center gap-1 bg-[#00E599] hover:bg-[#1AFF9F] text-[#052619] text-xs font-bold px-3 py-1 rounded-full shadow-sm shadow-[#00E599]/20 transition-all hover:scale-105"
+                    className="inline-flex items-center gap-1 bg-[#00E599] hover:bg-[#1AFF9F] text-[#052619] text-xs font-bold px-3 py-1 rounded-full shadow-sm shadow-[#00E599]/20 transition-all hover:scale-105 shimmer-badge"
                   >
                     <span>Rewards</span>
                     <ChevronRight className="h-3.5 w-3.5 stroke-[2.5]" />
@@ -223,13 +224,13 @@ export default function DashboardPage() {
             <div>
               <span className="text-zinc-400 text-[10px] uppercase tracking-wider block">Principal Invested</span>
               <p className="text-base font-serif text-white font-semibold tabular-nums mt-0.5">
-                {formatINR(totalInvested)}
+                <AnimatedNumber value={totalInvested} format="inr" duration={1200} />
               </p>
             </div>
             <div>
               <span className="text-zinc-400 text-[10px] uppercase tracking-wider block">Available Demo Cash</span>
               <p className="text-base font-serif text-[#00E599] font-semibold tabular-nums mt-0.5">
-                {formatINR(cashBalance)}
+                <AnimatedNumber value={cashBalance} format="inr" duration={1200} />
               </p>
             </div>
             <div>
@@ -241,7 +242,7 @@ export default function DashboardPage() {
             <div>
               <span className="text-zinc-400 text-[10px] uppercase tracking-wider block">Diversification Score</span>
               <p className="text-base font-serif text-[#00E599] font-semibold tabular-nums mt-0.5">
-                {diversification.score}/100
+                <AnimatedNumber value={diversification.score} format="integer" duration={1000} />/100
               </p>
             </div>
           </div>

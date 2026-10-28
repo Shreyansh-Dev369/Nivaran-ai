@@ -4,6 +4,9 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { PublicHeader } from "../components/layout/PublicHeader";
 import { PublicFooter } from "../components/layout/PublicFooter";
+import { LiveTickerRibbon } from "../components/ui/LiveTickerRibbon";
+import { InteractiveSimulator } from "../components/ui/InteractiveSimulator";
+import { AnimatedNumber } from "../components/ui/AnimatedNumber";
 import { formatINR } from "../lib/utils/formatters";
 import {
   ArrowRight,
@@ -25,34 +28,7 @@ import {
 } from "lucide-react";
 
 export default function HomePage() {
-  const [activeTier, setActiveTier] = useState<"CONSERVATIVE" | "BALANCED" | "GROWTH">("BALANCED");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
-  const [monthlyAmount, setMonthlyAmount] = useState<number>(25000);
-
-  const sampleAllocations = {
-    CONSERVATIVE: [
-      { symbol: "TCS", name: "Tata Consultancy Services Ltd", sector: "Technology", weight: 28, beta: 0.72, divYield: "1.45%" },
-      { symbol: "HDFCBANK", name: "HDFC Bank Ltd", sector: "Banking & Finance", weight: 25, beta: 1.05, divYield: "1.16%" },
-      { symbol: "ITC", name: "ITC Ltd", sector: "Consumer Goods", weight: 25, beta: 0.58, divYield: "2.82%" },
-      { symbol: "RELIANCE", name: "Reliance Industries Ltd", sector: "Energy & Utilities", weight: 22, beta: 0.88, divYield: "0.34%" },
-    ],
-    BALANCED: [
-      { symbol: "RELIANCE", name: "Reliance Industries Ltd", sector: "Energy & Utilities", weight: 25, beta: 0.88, divYield: "0.34%" },
-      { symbol: "TCS", name: "Tata Consultancy Services Ltd", sector: "Technology", weight: 22, beta: 0.72, divYield: "1.45%" },
-      { symbol: "HDFCBANK", name: "HDFC Bank Ltd", sector: "Banking & Finance", weight: 20, beta: 1.05, divYield: "1.16%" },
-      { symbol: "INFOSYS", name: "Infosys Ltd", sector: "Technology", weight: 18, beta: 0.95, divYield: "2.35%" },
-      { symbol: "LT", name: "Larsen & Toubro Ltd", sector: "Industrials", weight: 15, beta: 1.18, divYield: "0.78%" },
-    ],
-    GROWTH: [
-      { symbol: "BAJFINANCE", name: "Bajaj Finance Ltd", sector: "Banking & Finance", weight: 25, beta: 1.28, divYield: "0.51%" },
-      { symbol: "TATAMOTORS", name: "Tata Motors Ltd", sector: "Automobile", weight: 24, beta: 1.45, divYield: "0.65%" },
-      { symbol: "BHARTIARTL", name: "Bharti Airtel Ltd", sector: "Technology", weight: 21, beta: 0.82, divYield: "0.52%" },
-      { symbol: "TITAN", name: "Titan Company Ltd", sector: "Consumer Goods", weight: 16, beta: 0.89, divYield: "0.32%" },
-      { symbol: "ICICIBANK", name: "ICICI Bank Ltd", sector: "Banking & Finance", weight: 14, beta: 1.12, divYield: "0.85%" },
-    ],
-  };
-
-  const currentAllocation = sampleAllocations[activeTier];
 
   const lifecycleSteps = [
     {
@@ -99,10 +75,17 @@ export default function HomePage() {
   return (
     <div className="min-h-screen flex flex-col bg-[#EDF6F2] text-[#071912] font-sans selection:bg-[#00E599] selection:text-[#061610]">
       <PublicHeader />
+      <LiveTickerRibbon />
 
       <main className="flex-1 space-y-16 sm:space-y-24">
         {/* HERO SECTION - Inspired by Images 3, 4, 5 */}
-        <section className="pt-10 sm:pt-16 pb-12 sm:pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <section className="relative overflow-hidden pt-10 sm:pt-16 pb-12 sm:pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+          {/* Ambient Breathing Aurora */}
+          <div
+            className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-gradient-to-tr from-[#00E599]/15 via-emerald-400/10 to-teal-200/5 rounded-full blur-3xl pointer-events-none -z-10 animate-ambient-aurora"
+            aria-hidden="true"
+          />
+
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
             {/* Left Column: Typographic & Value Prop */}
             <div className="lg:col-span-7 space-y-6">
@@ -166,7 +149,7 @@ export default function HomePage() {
               <div className="absolute -inset-2 bg-gradient-to-tr from-[#00E599]/20 to-emerald-400/10 rounded-3xl blur-xl pointer-events-none"></div>
 
               {/* High-Craft Product Card */}
-              <div className="relative rounded-3xl bg-[#0A1D16] text-white p-5 sm:p-6 shadow-2xl border border-[#163628] space-y-4">
+              <div className="relative rounded-3xl bg-[#0A1D16] text-white p-5 sm:p-6 shadow-2xl border border-[#163628] space-y-4 artistic-card">
                 {/* Header */}
                 <div className="flex items-center justify-between pb-3 border-b border-[#183D2D]">
                   <div className="flex items-center gap-2.5">
@@ -190,9 +173,9 @@ export default function HomePage() {
                   </span>
                   <div className="flex items-center justify-between">
                     <span className="font-serif text-3xl sm:text-4xl text-white font-semibold tabular-nums">
-                      ₹12,48,920
+                      <AnimatedNumber value={1248920} format="inr" duration={1600} />
                     </span>
-                    <span className="inline-flex items-center gap-1 bg-[#00E599] text-[#052619] text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow-sm">
+                    <span className="inline-flex items-center gap-1 bg-[#00E599] text-[#052619] text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow-sm shimmer-badge">
                       Rewards &gt;
                     </span>
                   </div>
@@ -275,109 +258,9 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* SECTION 2: INTERACTIVE ALLOCATION PLAYGROUND */}
+        {/* SECTION 2: INTERACTIVE ALLOCATION SIMULATOR */}
         <section className="px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-          <div className="rounded-3xl bg-white p-6 sm:p-10 border border-[#D3E5DC] shadow-xs space-y-8">
-            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-6 border-b border-[#D3E5DC]">
-              <div>
-                <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-[#00A86B] font-bold block">
-                  Deterministic Simulator
-                </span>
-                <h2 className="font-serif text-2xl sm:text-3xl text-[#071912] font-semibold mt-0.5">
-                  Experience How NIVARAN Allocates Capital
-                </h2>
-                <p className="text-xs text-[#587F6E] mt-1 max-w-xl">
-                  Adjust your risk tier and monthly contribution to witness how our Modern Portfolio Theory engine screens and weights blue-chip Indian equities with strict exposure caps.
-                </p>
-              </div>
-
-              {/* Risk Tier Selector */}
-              <div className="flex items-center gap-1 bg-[#EDF6F2] p-1 rounded-full border border-[#D3E5DC]">
-                {(["CONSERVATIVE", "BALANCED", "GROWTH"] as const).map((tier) => (
-                  <button
-                    key={tier}
-                    onClick={() => setActiveTier(tier)}
-                    className={`px-3 py-1.5 rounded-full text-xs font-semibold transition-all ${
-                      activeTier === tier
-                        ? "bg-[#0A1D16] text-[#00E599] shadow-xs"
-                        : "text-[#587F6E] hover:text-[#071912]"
-                    }`}
-                  >
-                    {tier.charAt(0) + tier.slice(1).toLowerCase()}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Monthly Contribution Slider */}
-            <div className="space-y-3 bg-[#F4FAF7] p-5 rounded-2xl border border-[#D3E5DC]">
-              <div className="flex justify-between items-center text-xs font-mono">
-                <span className="text-[#587F6E] uppercase font-semibold">Simulated Monthly Investment</span>
-                <span className="text-base font-serif font-bold text-[#071912] tabular-nums">
-                  {formatINR(monthlyAmount)}/month
-                </span>
-              </div>
-              <input
-                type="range"
-                min="5000"
-                max="100000"
-                step="5000"
-                value={monthlyAmount}
-                onChange={(e) => setMonthlyAmount(Number(e.target.value))}
-                className="w-full accent-[#00E599] cursor-pointer"
-              />
-              <div className="flex justify-between text-[10px] font-mono text-[#587F6E]">
-                <span>₹5,000/mo</span>
-                <span>₹50,000/mo</span>
-                <span>₹1,00,000/mo</span>
-              </div>
-            </div>
-
-            {/* Generated Allocation Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {currentAllocation.map((stock) => {
-                const stockAmount = Math.round((monthlyAmount * stock.weight) / 100);
-
-                return (
-                  <div
-                    key={stock.symbol}
-                    className="p-4 rounded-2xl border border-[#D3E5DC] bg-white shadow-xs space-y-3 hover:border-[#00E599] transition-all group"
-                  >
-                    <div className="flex items-center justify-between">
-                      <span className="font-mono font-bold text-sm text-[#071912]">{stock.symbol}</span>
-                      <span className="px-2 py-0.5 rounded-full bg-[#E6F9F1] text-[#00A86B] font-mono font-bold text-xs">
-                        {stock.weight}%
-                      </span>
-                    </div>
-
-                    <p className="text-xs text-[#587F6E] font-medium truncate">{stock.name}</p>
-
-                    <div className="w-full bg-[#EDF6F2] h-2 rounded-full overflow-hidden">
-                      <div
-                        className="bg-[#00E599] h-full rounded-full transition-all duration-300"
-                        style={{ width: `${stock.weight * 2}%` }}
-                      ></div>
-                    </div>
-
-                    <div className="pt-1 flex items-center justify-between text-xs font-mono">
-                      <span className="text-[#587F6E]">Monthly:</span>
-                      <span className="font-bold text-[#071912] tabular-nums">{formatINR(stockAmount)}</span>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-
-            <div className="pt-2 text-center">
-              <Link
-                href="/investment-plan/create"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#0A1D16] hover:bg-[#122E23] text-[#00E599] text-xs font-mono font-bold transition-all shadow-xs"
-              >
-                <span>Customize Your Own 100% Deterministic Plan</span>
-                <ArrowRight className="h-3.5 w-3.5" />
-              </Link>
-            </div>
-          </div>
+          <InteractiveSimulator />
         </section>
 
         {/* SECTION 3: THE 4 MATHEMATICAL PILLARS */}
@@ -395,7 +278,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="rounded-3xl bg-white p-6 border border-[#D3E5DC] shadow-xs space-y-3">
+            <div className="rounded-3xl bg-white p-6 border border-[#D3E5DC] shadow-xs space-y-3 artistic-card">
               <div className="w-10 h-10 rounded-2xl bg-[#0A1D16] text-[#00E599] flex items-center justify-center font-mono font-bold text-xs">
                 01
               </div>
@@ -407,7 +290,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="rounded-3xl bg-white p-6 border border-[#D3E5DC] shadow-xs space-y-3">
+            <div className="rounded-3xl bg-white p-6 border border-[#D3E5DC] shadow-xs space-y-3 artistic-card">
               <div className="w-10 h-10 rounded-2xl bg-[#0A1D16] text-[#00E599] flex items-center justify-center font-mono font-bold text-xs">
                 02
               </div>
@@ -419,7 +302,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="rounded-3xl bg-white p-6 border border-[#D3E5DC] shadow-xs space-y-3">
+            <div className="rounded-3xl bg-white p-6 border border-[#D3E5DC] shadow-xs space-y-3 artistic-card">
               <div className="w-10 h-10 rounded-2xl bg-[#0A1D16] text-[#00E599] flex items-center justify-center font-mono font-bold text-xs">
                 03
               </div>
@@ -431,7 +314,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="rounded-3xl bg-white p-6 border border-[#D3E5DC] shadow-xs space-y-3">
+            <div className="rounded-3xl bg-white p-6 border border-[#D3E5DC] shadow-xs space-y-3 artistic-card">
               <div className="w-10 h-10 rounded-2xl bg-[#0A1D16] text-[#00E599] flex items-center justify-center font-mono font-bold text-xs">
                 04
               </div>

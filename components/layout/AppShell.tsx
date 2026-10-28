@@ -7,6 +7,7 @@ import { AppSidebar } from "./AppSidebar";
 import { AppNavbar } from "./AppNavbar";
 import { MobileBottomNav } from "./MobileBottomNav";
 import { PageTransition } from "../ui/PageTransition";
+import { ScrollProgressBar } from "../ui/ScrollProgressBar";
 import Link from "next/link";
 
 interface AppShellProps {
@@ -33,6 +34,7 @@ export function AppShell({ children }: AppShellProps) {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#EDF6F2] text-[#071912] font-sans max-w-full overflow-x-hidden">
+      <ScrollProgressBar />
       {/* Top Demo Context Bar - Sleek Dark Obsidian with Live Mint Spark */}
       <div className="bg-[#0A1D16] text-[#EDF6F2] text-[10px] font-mono uppercase tracking-wider py-1.5 px-4 sm:px-6 flex items-center justify-between border-b border-[#14352A] shrink-0">
         <div className="flex items-center gap-2 truncate">

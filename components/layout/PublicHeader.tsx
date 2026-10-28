@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { BrandLogo } from "../ui/BrandLogo";
 import { DemoBadge } from "../ui/DemoBadge";
+import { ScrollProgressBar } from "../ui/ScrollProgressBar";
 import { Menu, X, ArrowRight, ShieldCheck } from "lucide-react";
 
 export function PublicHeader() {
@@ -18,7 +19,9 @@ export function PublicHeader() {
   ];
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-[#D3E5DC] bg-white/90 backdrop-blur-md">
+    <>
+      <ScrollProgressBar />
+      <header className="sticky top-0 z-40 w-full border-b border-[#D3E5DC] bg-white/90 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Brand & Demo Pill */}
         <div className="flex items-center gap-3 sm:gap-4 shrink-0">
@@ -111,5 +114,6 @@ export function PublicHeader() {
         </div>
       )}
     </header>
+    </>
   );
 }
