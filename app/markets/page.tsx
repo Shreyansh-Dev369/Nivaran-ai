@@ -7,6 +7,7 @@ import { useApp } from "../../context/AppContext";
 import { INDIAN_STOCKS, STOCK_SECTORS } from "../../lib/data/stocks";
 import { formatINR, formatMarketCapCr } from "../../lib/utils/formatters";
 import { SectorHeatmap } from "../../components/markets/SectorHeatmap";
+import { MiniSparkline } from "../../components/charts/MiniSparkline";
 import {
   Search,
   Star,
@@ -226,6 +227,7 @@ export default function MarketsPage() {
                   <th className="py-3.5 px-4 text-right">Market Cap</th>
                   <th className="py-3.5 px-4 text-right">LTP (INR)</th>
                   <th className="py-3.5 px-4 text-right">Day Shift</th>
+                  <th className="py-3.5 px-3 text-center hidden md:table-cell">30D Trend</th>
                   <th className="py-3.5 px-4 text-right">P/E</th>
                   <th className="py-3.5 px-4 text-right">Div. Yield</th>
                   <th className="py-3.5 px-4 text-center">Action</th>
@@ -291,6 +293,9 @@ export default function MarketsPage() {
                         >
                           {isUp ? "+" : ""}{stock.changePercent.toFixed(2)}%
                         </span>
+                      </td>
+                      <td className="py-3.5 px-3 text-center hidden md:table-cell">
+                        <MiniSparkline changePercent={stock.changePercent} />
                       </td>
                       <td className="py-3.5 px-4 text-right font-mono tabular-nums text-[#587F6E]">
                         {stock.peRatio}x

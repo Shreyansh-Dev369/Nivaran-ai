@@ -5,6 +5,7 @@ import { AppShell } from "../../components/layout/AppShell";
 import { useApp } from "../../context/AppContext";
 import { Transaction, TransactionType } from "../../lib/types";
 import { formatINR, formatDate } from "../../lib/utils/formatters";
+import { PhysicalVoucherModal } from "../../components/modals/PhysicalVoucherModal";
 import {
   Search,
   CheckCircle2,
@@ -176,60 +177,31 @@ export default function ActivityPage() {
           </div>
         </div>
 
-        {/* Voucher Receipt Modal */}
-        {selectedTx && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 backdrop-blur-xs font-sans">
-            <div className="w-full max-w-md rounded-3xl bg-white p-6 border border-[#D3E5DC] shadow-2xl space-y-4 font-sans">
-              <div className="flex items-center justify-between pb-3 border-b border-[#D3E5DC]">
-                <div>
-                  <span className="text-[10px] font-mono uppercase tracking-wider text-[#00A86B] font-bold block">
-                    General Ledger Voucher
-                  </span>
-                  <h3 className="font-serif text-xl font-semibold text-[#071912]">
-                    Audit Record: {selectedTx.referenceId || selectedTx.id}
-                  </h3>
-                </div>
-                <button
-                  onClick={() => setSelectedTx(null)}
-                  className="p-1 rounded-full text-[#587F6E] hover:bg-[#EDF6F2]"
-                >
-                  <X className="h-4 w-4" />
-                </button>
-              </div>
-
-              <div className="space-y-3 font-mono text-xs">
-                <div className="p-4 rounded-2xl bg-[#F4FAF7] border border-[#D3E5DC] space-y-2">
-                  <div className="flex justify-between">
-                    <span className="text-[#587F6E]">Journal Date:</span>
-                    <span className="font-bold text-[#071912]">{formatDate(selectedTx.date)}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-[#587F6E]">Classification:</span>
-                    <span className="font-bold text-[#0A1D16]">{selectedTx.type}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-[#587F6E]">Voucher Status:</span>
-                    <span className="font-bold text-[#00A86B]">COMPLETED & VERIFIED</span>
-                  </div>
-                </div>
-
-                <div className="p-4 rounded-2xl bg-[#0A1D16] text-white flex justify-between items-center">
-                  <span className="text-zinc-400">Total Cleared Amount:</span>
-                  <span className="font-serif text-xl font-bold text-[#00E599]">
-                    {formatINR(selectedTx.amount)}
-                  </span>
-                </div>
-              </div>
-
-              <button
-                onClick={() => setSelectedTx(null)}
-                className="w-full py-2.5 rounded-full bg-[#0A1D16] text-[#00E599] font-mono text-xs font-bold hover:bg-[#122E23] transition-all shadow-xs"
-              >
-                Close Audit Voucher
-              </button>
-            </div>
-          </div>
-        )}
+        {/* Authentic Physical Double-Entry Voucher Certificate */}
+        <PhysicalVoucherModal
+          isOpen={!!selectedTx}
+          onClose={() => setSelectedTx(null)}
+          voucherData={
+            selectedTx
+              ? {
+                  voucherNumber: selectedTx.referenceId || `NVR-${selectedTx.id}`,
+                  date: formatDate(selectedTx.date),
+                  investorName: "Arjun Sharma",
+                  transactionType: selectedTx.description,
+                  amount: selectedTx.amount,
+                  debitAccount:
+                    selectedTx.type === "DEPOSIT"
+                      ? "VIRTUAL_CASH_SETTLEMENT_RESERVE"
+                      : "DEMO_PORTFOLIO_EQUITIES_LEDGER",
+                  creditAccount:
+                    selectedTx.type === "DEPOSIT"
+                      ? "DEMO_BANK_SIMULATION"
+                      : "VIRTUAL_CASH_SETTLEMENT_RESERVE",
+                  hash: "e9f4c3a1098b671a5c43d21e89f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9",
+                }
+              : undefined
+          }
+        />
       </div>
     </AppShell>
   );

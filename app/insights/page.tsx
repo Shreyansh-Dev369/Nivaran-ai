@@ -6,6 +6,7 @@ import { AppShell } from "../../components/layout/AppShell";
 import { useApp } from "../../context/AppContext";
 import { formatINR } from "../../lib/utils/formatters";
 import { calculateDiversificationScore } from "../../lib/utils/simulation-engine";
+import { PortfolioRadarChart } from "../../components/charts/PortfolioRadarChart";
 import {
   Activity,
   BookOpen,
@@ -141,6 +142,15 @@ export default function InsightsPage() {
               </p>
             </div>
           </div>
+        </div>
+
+        {/* 5-AXIS RADAR RISK POLYGON */}
+        <div className="scroll-reveal">
+          <PortfolioRadarChart
+            diversificationScore={diversification.score}
+            cashBalance={cashBalance}
+            totalPortfolioValue={totalPortfolioValue}
+          />
         </div>
 
         {/* Explainable Decision Engine Memo */}

@@ -8,6 +8,7 @@ import { AppNavbar } from "./AppNavbar";
 import { MobileBottomNav } from "./MobileBottomNav";
 import { PageTransition } from "../ui/PageTransition";
 import { ScrollProgressBar } from "../ui/ScrollProgressBar";
+import { LiveExecutionTerminal } from "../ui/LiveExecutionTerminal";
 import Link from "next/link";
 
 interface AppShellProps {
@@ -73,6 +74,9 @@ export function AppShell({ children }: AppShellProps) {
 
       {/* Mobile Floating Bottom Dock */}
       <MobileBottomNav />
+
+      {/* Real-Time Engine Audit Terminal Stream */}
+      <LiveExecutionTerminal />
     </div>
   );
 }
