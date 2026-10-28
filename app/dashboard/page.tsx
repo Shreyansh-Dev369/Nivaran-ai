@@ -11,6 +11,7 @@ import { RebalanceModal } from "../../components/modals/RebalanceModal";
 import { AddFundsModal } from "../../components/modals/AddFundsModal";
 import { AnimatedNumber } from "../../components/ui/AnimatedNumber";
 import { StressTestCard } from "../../components/dashboard/StressTestCard";
+import { DriftRadar } from "../../components/dashboard/DriftRadar";
 import { calculateDiversificationScore } from "../../lib/utils/simulation-engine";
 import { INDIAN_STOCKS } from "../../lib/data/stocks";
 import {
@@ -311,6 +312,15 @@ export default function DashboardPage() {
         {/* SECTION 2.5: INTERACTIVE STRESS-TESTING SIMULATOR */}
         <div className="scroll-reveal">
           <StressTestCard portfolioValue={totalPortfolioValue} />
+        </div>
+
+        {/* SECTION 2.7: REBALANCING DRIFT CALIBRATION RADAR */}
+        <div className="scroll-reveal">
+          <DriftRadar
+            holdings={holdings}
+            totalHoldingsValue={totalHoldingsValue}
+            onOpenRebalance={() => setIsRebalanceOpen(true)}
+          />
         </div>
 
         {/* SECTION 3: INVITE A FRIEND CARD & ACTIVE PLAN ENGINE */}

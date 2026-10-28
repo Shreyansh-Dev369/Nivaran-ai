@@ -7,6 +7,7 @@ import { PublicFooter } from "../components/layout/PublicFooter";
 import { LiveTickerRibbon } from "../components/ui/LiveTickerRibbon";
 import { InteractiveSimulator } from "../components/ui/InteractiveSimulator";
 import { AnimatedNumber } from "../components/ui/AnimatedNumber";
+import { SIPTimeMachine } from "../components/calculators/SIPTimeMachine";
 import { formatINR } from "../lib/utils/formatters";
 import {
   ArrowRight,
@@ -326,6 +327,11 @@ export default function HomePage() {
               </p>
             </div>
           </div>
+        </section>
+
+        {/* SECTION 3.5: SIP COMPOUNDING TIME MACHINE */}
+        <section className="px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto scroll-reveal">
+          <SIPTimeMachine />
         </section>
 
         {/* SECTION 4: COMPARISON MATRIX */}

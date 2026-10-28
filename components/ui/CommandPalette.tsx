@@ -23,6 +23,7 @@ import {
   ArrowRight,
   RotateCcw,
   Sparkles,
+  GraduationCap,
 } from "lucide-react";
 
 interface CommandPaletteProps {
@@ -34,6 +35,7 @@ interface CommandPaletteProps {
   onTriggerSIP?: () => void;
   onResetDemo?: () => void;
   onToast?: (msg: string) => void;
+  onOpenPitch?: () => void;
 }
 
 interface CommandItem {
@@ -55,6 +57,7 @@ export function CommandPalette({
   onTriggerSIP,
   onResetDemo,
   onToast,
+  onOpenPitch,
 }: CommandPaletteProps) {
   const router = useRouter();
   const [query, setQuery] = useState("");
@@ -175,6 +178,18 @@ export function CommandPalette({
 
       // Instant Actions
       {
+        id: "act-pitch",
+        category: "ACTIONS",
+        title: "Open University Architecture & Viva Guide",
+        subtitle: "Full-stack architecture, algorithms, and examiner Q&A walkthrough",
+        icon: GraduationCap,
+        badge: "VIVA",
+        action: () => {
+          onClose();
+          onOpenPitch?.();
+        },
+      },
+      {
         id: "act-funds",
         category: "ACTIONS",
         title: "Credit Demo Funds",
@@ -230,7 +245,7 @@ export function CommandPalette({
         action: () => onResetDemo?.(),
       },
     ],
-    [router, onOpenAddFunds, onOpenRebalance, onTriggerSIP, onOpenShortcuts, onResetDemo, onToast]
+    [router, onOpenAddFunds, onOpenRebalance, onTriggerSIP, onOpenShortcuts, onResetDemo, onToast, onOpenPitch]
   );
 
   // Security items from database

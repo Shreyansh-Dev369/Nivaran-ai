@@ -7,11 +7,13 @@ import { BrandLogo } from "../ui/BrandLogo";
 import { DemoBadge } from "../ui/DemoBadge";
 import { ScrollProgressBar } from "../ui/ScrollProgressBar";
 import { MarketStatusBadge } from "../ui/MarketStatusBadge";
-import { Menu, X, ArrowRight, ShieldCheck } from "lucide-react";
+import { useApp } from "../../context/AppContext";
+import { Menu, X, ArrowRight, ShieldCheck, GraduationCap } from "lucide-react";
 
 export function PublicHeader() {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { setIsPitchOpen } = useApp();
 
   const navLinks = [
     { label: "How It Works", href: "/how-it-works" },
@@ -55,6 +57,14 @@ export function PublicHeader() {
         {/* Right Action Trigger */}
         <div className="hidden md:flex items-center gap-3 text-xs font-sans">
           <MarketStatusBadge />
+          <button
+            onClick={() => setIsPitchOpen(true)}
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#14352A] hover:bg-[#1E4D3D] text-[#00E599] text-xs font-mono font-bold transition-all shadow-xs"
+            title="Open College Viva Guide & Architecture Walkthrough"
+          >
+            <GraduationCap className="h-3.5 w-3.5" />
+            <span>Viva Guide</span>
+          </button>
           <Link
             href="/login"
             className="text-[#18382C] hover:text-[#0A1D16] font-semibold px-3 py-1.5 transition-colors"

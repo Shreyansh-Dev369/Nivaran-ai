@@ -25,6 +25,7 @@ import { CommandPalette } from "../components/ui/CommandPalette";
 import { ShortcutsModal } from "../components/modals/ShortcutsModal";
 import { AddFundsModal } from "../components/modals/AddFundsModal";
 import { RebalanceModal } from "../components/modals/RebalanceModal";
+import { PitchModeModal } from "../components/ui/PitchModeModal";
 import { soundManager } from "../lib/utils/sound";
 import { api, getAuthToken, removeAuthToken } from "../lib/api";
 
@@ -337,6 +338,8 @@ interface AppContextType {
   setIsAddFundsOpen: (open: boolean) => void;
   isRebalanceOpen: boolean;
   setIsRebalanceOpen: (open: boolean) => void;
+  isPitchOpen: boolean;
+  setIsPitchOpen: (open: boolean) => void;
 }
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
@@ -363,6 +366,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [isShortcutsOpen, setIsShortcutsOpen] = useState(false);
   const [isAddFundsOpen, setIsAddFundsOpen] = useState(false);
   const [isRebalanceOpen, setIsRebalanceOpen] = useState(false);
+  const [isPitchOpen, setIsPitchOpen] = useState(false);
 
   const showToast = (toast: Omit<ToastItem, "id">) => {
     const id = "toast_" + Date.now().toString(36) + "_" + Math.random().toString(36).substring(2, 6);
@@ -1122,12 +1126,18 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         setIsAddFundsOpen,
         isRebalanceOpen,
         setIsRebalanceOpen,
+        isPitchOpen,
+        setIsPitchOpen,
       }}
     >
       {children}
 
       {/* Global Interactive Experience Layers */}
       <ToastContainer toasts={toasts} onDismiss={dismissToast} />
+      <PitchModeModal
+        isOpen={isPitchOpen}
+        onClose={() => setIsPitchOpen(false)}
+      />
       <CommandPalette
         isOpen={isCommandPaletteOpen}
         onClose={() => setIsCommandPaletteOpen(false)}
@@ -1150,6 +1160,10 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         onResetDemo={() => {
           setIsCommandPaletteOpen(false);
           resetDemoData();
+        }}
+        onOpenPitch={() => {
+          setIsCommandPaletteOpen(false);
+          setIsPitchOpen(true);
         }}
         onToast={(msg) => showToast({ type: "info", title: "Preference Updated", message: msg })}
       />

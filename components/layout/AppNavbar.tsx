@@ -20,6 +20,7 @@ import {
   Check,
   TrendingUp,
   Sparkles,
+  GraduationCap,
 } from "lucide-react";
 
 export function AppNavbar() {
@@ -32,6 +33,7 @@ export function AppNavbar() {
     markAllAsRead,
     setIsCommandPaletteOpen,
     setIsAddFundsOpen,
+    setIsPitchOpen,
   } = useApp();
 
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
@@ -167,6 +169,15 @@ export function AppNavbar() {
           <div className="hidden lg:block">
             <DemoBadge compact />
           </div>
+
+          <button
+            onClick={() => setIsPitchOpen(true)}
+            className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-[#D3E5DC] bg-[#14352A] hover:bg-[#1E4D3D] text-[#00E599] text-xs font-mono font-bold transition-all shadow-xs"
+            title="Open Architecture & Viva Examiner Guide"
+          >
+            <GraduationCap className="h-3.5 w-3.5" />
+            <span>Viva Guide</span>
+          </button>
 
           <button
             onClick={() => setIsAddFundsOpen(true)}
