@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { BrandLogo } from "../ui/BrandLogo";
 import { DemoBadge } from "../ui/DemoBadge";
 import { ScrollProgressBar } from "../ui/ScrollProgressBar";
+import { MarketStatusBadge } from "../ui/MarketStatusBadge";
 import { Menu, X, ArrowRight, ShieldCheck } from "lucide-react";
 
 export function PublicHeader() {
@@ -53,6 +54,7 @@ export function PublicHeader() {
 
         {/* Right Action Trigger */}
         <div className="hidden md:flex items-center gap-3 text-xs font-sans">
+          <MarketStatusBadge />
           <Link
             href="/login"
             className="text-[#18382C] hover:text-[#0A1D16] font-semibold px-3 py-1.5 transition-colors"

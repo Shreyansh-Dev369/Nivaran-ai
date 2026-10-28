@@ -259,12 +259,12 @@ export default function HomePage() {
         </section>
 
         {/* SECTION 2: INTERACTIVE ALLOCATION SIMULATOR */}
-        <section className="px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <section className="px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto scroll-reveal">
           <InteractiveSimulator />
         </section>
 
         {/* SECTION 3: THE 4 MATHEMATICAL PILLARS */}
-        <section className="px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto space-y-8">
+        <section className="px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto space-y-8 scroll-reveal">
           <div className="text-center max-w-2xl mx-auto space-y-2">
             <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-[#00A86B] font-bold">
               Engineering Principles
@@ -329,7 +329,7 @@ export default function HomePage() {
         </section>
 
         {/* SECTION 4: COMPARISON MATRIX */}
-        <section className="px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto space-y-8">
+        <section className="px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto space-y-8 scroll-reveal">
           <div className="rounded-3xl bg-white p-6 sm:p-10 border border-[#D3E5DC] shadow-xs space-y-6">
             <div>
               <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-[#00A86B] font-bold block">
@@ -384,7 +384,7 @@ export default function HomePage() {
         </section>
 
         {/* SECTION 5: INTERACTIVE FAQ ACCORDION */}
-        <section className="px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto space-y-6">
+        <section className="px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto space-y-6 scroll-reveal">
           <div className="text-center space-y-2">
             <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-[#00A86B] font-bold">
               Frequently Asked Questions
@@ -427,7 +427,7 @@ export default function HomePage() {
         </section>
 
         {/* BOTTOM CALL TO ACTION */}
-        <section className="px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto pb-12">
+        <section className="px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto pb-12 scroll-reveal">
           <div className="rounded-3xl bg-[#0A1D16] text-white p-8 sm:p-12 border border-[#163628] shadow-2xl text-center space-y-5 relative overflow-hidden">
             <div className="relative z-10 max-w-xl mx-auto space-y-3">
               <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-[#00E599] font-bold block">

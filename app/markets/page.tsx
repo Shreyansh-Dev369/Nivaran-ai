@@ -6,6 +6,7 @@ import { AppShell } from "../../components/layout/AppShell";
 import { useApp } from "../../context/AppContext";
 import { INDIAN_STOCKS, STOCK_SECTORS } from "../../lib/data/stocks";
 import { formatINR, formatMarketCapCr } from "../../lib/utils/formatters";
+import { SectorHeatmap } from "../../components/markets/SectorHeatmap";
 import {
   Search,
   Star,
@@ -83,6 +84,14 @@ export default function MarketsPage() {
           </div>
         </div>
 
+        {/* SECTOR CAPITALIZATION HEATMAP */}
+        <div className="scroll-reveal">
+          <SectorHeatmap
+            selectedSector={selectedSector}
+            onSelectSector={setSelectedSector}
+          />
+        </div>
+
         {/* TOP MOVERS CARDS ROW - Directly inspired by Images 3 & 5 */}
         <div className="space-y-3">
           <div className="flex items-center justify-between">
@@ -101,7 +110,7 @@ export default function MarketsPage() {
                 <Link
                   key={stock.symbol}
                   href={`/stocks/${stock.symbol}`}
-                  className="p-4 rounded-2xl bg-white border border-[#D3E5DC] shadow-xs hover:border-[#00E599] transition-all group"
+                  className="p-4 rounded-2xl bg-white border border-[#D3E5DC] shadow-xs hover:border-[#00E599] transition-all group artistic-card"
                 >
                   <div className="flex items-center justify-between mb-2">
                     <div className="w-8 h-8 rounded-xl bg-[#0A1D16] text-[#00E599] flex items-center justify-center font-mono font-bold text-xs group-hover:scale-105 transition-transform">

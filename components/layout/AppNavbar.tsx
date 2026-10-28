@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { useApp } from "../../context/AppContext";
 import { DemoBadge } from "../ui/DemoBadge";
 import { BrandLogo } from "../ui/BrandLogo";
+import { MarketStatusBadge } from "../ui/MarketStatusBadge";
 import { INDIAN_STOCKS } from "../../lib/data/stocks";
 import { formatINR } from "../../lib/utils/formatters";
 import {
@@ -159,6 +160,10 @@ export function AppNavbar() {
 
         {/* Right Actions: Demo Indicator, Notification, Add Funds, Avatar */}
         <div className="flex items-center gap-2.5">
+          <div className="hidden md:block">
+            <MarketStatusBadge />
+          </div>
+
           <div className="hidden lg:block">
             <DemoBadge compact />
           </div>

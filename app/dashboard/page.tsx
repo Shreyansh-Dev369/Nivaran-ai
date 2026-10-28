@@ -10,6 +10,7 @@ import { AllocationDonutChart } from "../../components/charts/AllocationDonutCha
 import { RebalanceModal } from "../../components/modals/RebalanceModal";
 import { AddFundsModal } from "../../components/modals/AddFundsModal";
 import { AnimatedNumber } from "../../components/ui/AnimatedNumber";
+import { StressTestCard } from "../../components/dashboard/StressTestCard";
 import { calculateDiversificationScore } from "../../lib/utils/simulation-engine";
 import { INDIAN_STOCKS } from "../../lib/data/stocks";
 import {
@@ -305,6 +306,11 @@ export default function DashboardPage() {
               <ArrowRight className="h-3.5 w-3.5" />
             </Link>
           </div>
+        </div>
+
+        {/* SECTION 2.5: INTERACTIVE STRESS-TESTING SIMULATOR */}
+        <div className="scroll-reveal">
+          <StressTestCard portfolioValue={totalPortfolioValue} />
         </div>
 
         {/* SECTION 3: INVITE A FRIEND CARD & ACTIVE PLAN ENGINE */}
