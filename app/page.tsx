@@ -79,8 +79,8 @@ export default function HomePage() {
 
   const faqs = [
     {
-      q: "How does NIVARA differ from conventional trading terminals in India?",
-      a: "Trading terminals are engineered for transaction churn, displaying rapid price ticks, derivatives chains, and speculative technical charts. NIVARA is designed for portfolio capital: you define your financial goals, risk constraints, and sector convictions, and the engine constructs an explainable, diversified equity allocation that automates monthly contributions.",
+      q: "How does NIVARAN differ from conventional trading terminals in India?",
+      a: "Trading terminals are engineered for transaction churn, displaying rapid price ticks, derivatives chains, and speculative technical charts. NIVARAN is designed for portfolio capital: you define your financial goals, risk constraints, and sector convictions, and the engine constructs an explainable, diversified equity allocation that automates monthly contributions.",
     },
     {
       q: "How are individual stocks selected for a user's allocation?",
@@ -88,11 +88,11 @@ export default function HomePage() {
     },
     {
       q: "Is real money transferred during this demonstration?",
-      a: "No. NIVARA is an educational prototype developed for university evaluation. All transactions, contributions, and cash balances operate within an isolated, simulated ledger. No real brokerage credentials, bank accounts, or UPI transfers are ever required or initiated.",
+      a: "No. NIVARAN is an educational prototype developed for university evaluation. All transactions, contributions, and cash balances operate within an isolated, simulated ledger. No real brokerage credentials, bank accounts, or UPI transfers are ever required or initiated.",
     },
     {
       q: "What is portfolio drift, and how does automated rebalancing resolve it?",
-      a: "Over time, certain market winners grow faster than others, inadvertently skewing your portfolio toward excessive risk in one company or sector. NIVARA monitors drift in real time: whenever an asset drifts beyond ±5% from your target weight, the engine proposes an exact rebalancing schedule to restore balance without guessing.",
+      a: "Over time, certain market winners grow faster than others, inadvertently skewing your portfolio toward excessive risk in one company or sector. NIVARAN monitors drift in real time: whenever an asset drifts beyond ±5% from your target weight, the engine proposes an exact rebalancing schedule to restore balance without guessing.",
     },
   ];
 
@@ -122,7 +122,7 @@ export default function HomePage() {
               </div>
 
               <p className="text-xs sm:text-sm text-[#4B665A] leading-relaxed max-w-xl">
-                Most retail investors underperform not because Indian enterprises fail to compound, but because emotional day-trading, speculative tips, and unchecked concentration erode returns. NIVARA automates preference-based allocation with deterministic rules.
+                Most retail investors underperform not because Indian enterprises fail to compound, but because emotional day-trading, speculative tips, and unchecked concentration erode returns. NIVARAN automates preference-based allocation with deterministic rules.
               </p>
 
               {/* Action Buttons */}
@@ -284,7 +284,7 @@ export default function HomePage() {
                   Deterministic Simulator
                 </span>
                 <h2 className="font-serif text-2xl sm:text-3xl text-[#071912] font-semibold mt-0.5">
-                  Experience How NIVARA Allocates Capital
+                  Experience How NIVARAN Allocates Capital
                 </h2>
                 <p className="text-xs text-[#587F6E] mt-1 max-w-xl">
                   Adjust your risk tier and monthly contribution to witness how our Modern Portfolio Theory engine screens and weights blue-chip Indian equities with strict exposure caps.
@@ -453,7 +453,7 @@ export default function HomePage() {
                 Objective Comparison
               </span>
               <h2 className="font-serif text-2xl sm:text-3xl text-[#071912] font-semibold mt-0.5">
-                Why NIVARA Solves the Individual Investor Dilemma
+                Why NIVARAN Solves the Individual Investor Dilemma
               </h2>
             </div>
 
@@ -463,7 +463,7 @@ export default function HomePage() {
                   <tr>
                     <th className="py-3 px-4">Dimension</th>
                     <th className="py-3 px-4 bg-[#EDF6F2] text-[#0A1D16] font-bold rounded-t-xl">
-                      NIVARA Architecture
+                      NIVARAN Architecture
                     </th>
                     <th className="py-3 px-4">DIY Day-Trading Apps</th>
                     <th className="py-3 px-4">Traditional Mutual Funds</th>

@@ -34,7 +34,7 @@ export default function HowItWorksPage() {
       num: "02",
       clause: "CLAUSE 02 / DETERMINISTIC ENGINE",
       title: "Rule-Based Indian Stock Allocation",
-      desc: "The NIVARA engine scans qualifying Indian blue-chip equities listed on the NSE and BSE. It distributes capital across eligible companies while strictly enforcing maximum single-stock caps (typically 20% to 25%) and guaranteeing a mathematical 100% total allocation.",
+      desc: "The NIVARAN engine scans qualifying Indian blue-chip equities listed on the NSE and BSE. It distributes capital across eligible companies while strictly enforcing maximum single-stock caps (typically 20% to 25%) and guaranteeing a mathematical 100% total allocation.",
       highlights: [
         "Explainable stock selection rationale",
         "Enforced single-stock caps",
@@ -56,7 +56,7 @@ export default function HowItWorksPage() {
       num: "04",
       clause: "CLAUSE 04 / DRIFT GOVERNANCE",
       title: "Continuous Drift Monitoring & Rebalancing",
-      desc: "As market prices fluctuate, high-performing equities naturally expand while others contract, skewing your intended asset distribution. NIVARA monitors portfolio drift in real time and alerts you when positions deviate by more than ±5%, providing one-click rebalance execution.",
+      desc: "As market prices fluctuate, high-performing equities naturally expand while others contract, skewing your intended asset distribution. NIVARAN monitors portfolio drift in real time and alerts you when positions deviate by more than ±5%, providing one-click rebalance execution.",
       highlights: [
         "Real-time drift variance tracking",
         "Pre-trade execution preview",
@@ -80,7 +80,7 @@ export default function HowItWorksPage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl sm:text-6xl font-normal tracking-tight text-charcoal-950">
-              How the NIVARA Platform Operates
+              How the NIVARAN Platform Operates
             </h1>
             <p className="font-sans text-sm sm:text-base text-charcoal-600 max-w-2xl mx-auto leading-relaxed">
               An unhurried, transparent mechanism for preference-based investing in Indian equities—from mandate creation to automated execution and drift control.

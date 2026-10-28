@@ -11,6 +11,7 @@ import {
   RiskTolerance,
   StockSector,
   Transaction,
+  TransactionType,
   UserProfile,
 } from "../lib/types";
 import { INDIAN_STOCKS } from "../lib/data/stocks";
@@ -25,6 +26,7 @@ import { ShortcutsModal } from "../components/modals/ShortcutsModal";
 import { AddFundsModal } from "../components/modals/AddFundsModal";
 import { RebalanceModal } from "../components/modals/RebalanceModal";
 import { soundManager } from "../lib/utils/sound";
+import { api, getAuthToken, removeAuthToken } from "../lib/api";
 
 // Default Seed User
 const SEED_USER: UserProfile = {
@@ -320,6 +322,8 @@ interface AppContextType {
   rebalancePortfolio: () => { success: boolean; message: string; tradesCount: number };
   resetDemoData: () => void;
   resetToEmptyState: () => void;
+  isBackendConnected: boolean;
+  refreshFromBackend: () => Promise<void>;
 
   toasts: ToastItem[];
   showToast: (toast: Omit<ToastItem, "id">) => void;
@@ -337,7 +341,7 @@ interface AppContextType {
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
 
-const STORAGE_KEY = "nivara_investing_state_v1";
+const STORAGE_KEY = "nivaran_investing_state_v1";
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
   const [isHydrated, setIsHydrated] = useState(false);
@@ -376,6 +380,80 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     setToasts((prev) => prev.filter((t) => t.id !== id));
   };
 
+  const [isBackendConnected, setIsBackendConnected] = useState<boolean>(false);
+
+  const refreshFromBackend = async () => {
+    try {
+      const health = await api.checkHealth();
+      if (health.status === "healthy" || health.status === "degraded") {
+        setIsBackendConnected(true);
+      } else {
+        setIsBackendConnected(false);
+        return;
+      }
+
+      const token = getAuthToken();
+      if (!token) return;
+
+      const meRes = await api.auth.me();
+      if (meRes.data) {
+        setUser({
+          id: meRes.data.id,
+          name: meRes.data.name,
+          email: meRes.data.email,
+          phone: meRes.data.phone || "+91 98765 43210",
+          joinedDate: meRes.data.created_at ? meRes.data.created_at.split("T")[0] : "2026-06-15",
+          investorTier: meRes.data.investor_tier || "Tier 1 Verified (Demo)",
+          panMasked: meRes.data.pan_masked || "ABCDE****F",
+        });
+        setIsAuthenticated(true);
+      }
+
+      const portRes = await api.portfolio.get();
+      if (portRes.data) {
+        setCashBalance(portRes.data.cash_balance);
+        if (portRes.data.holdings && Array.isArray(portRes.data.holdings)) {
+          setHoldings(
+            portRes.data.holdings.map((h: any) => ({
+              symbol: h.symbol,
+              name: h.name,
+              sector: h.sector as StockSector,
+              shares: h.shares,
+              averageBuyPrice: h.average_buy_price,
+              currentPrice: h.current_price,
+              investedValue: h.invested_value,
+              currentValue: h.current_value,
+              unrealizedPnl: h.unrealized_pnl,
+              unrealizedPnlPercent: h.unrealized_pnl_percent,
+              currentWeight: h.current_weight,
+              targetWeight: h.target_weight,
+            }))
+          );
+        }
+      }
+
+      const txRes = await api.transactions.list(undefined, 50);
+      if (txRes.data && Array.isArray(txRes.data)) {
+        setTransactions(
+          txRes.data.map((t: any) => ({
+            id: t.id,
+            type: t.type as TransactionType,
+            date: t.created_at,
+            amount: t.amount,
+            symbol: t.symbol,
+            shares: t.shares,
+            price: t.price,
+            description: t.description,
+            status: t.status,
+            referenceId: t.reference_id,
+          }))
+        );
+      }
+    } catch {
+      setIsBackendConnected(false);
+    }
+  };
+
   // 1. Hydrate from localStorage on client mount
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -394,9 +472,10 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
           if (parsed.notifications) setNotifications(parsed.notifications);
         }
       } catch (e) {
-        console.warn("Failed to parse stored Nivara state, using seed defaults:", e);
+        console.warn("Failed to parse stored Nivaran state, using seed defaults:", e);
       }
       setIsHydrated(true);
+      refreshFromBackend();
     }, 0);
     return () => clearTimeout(timer);
   }, []);
@@ -452,6 +531,35 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 
   // Auth actions
   const signIn = (email: string, name?: string) => {
+    // Attempt backend authentication
+    const tryBackend = async () => {
+      try {
+        let res;
+        if (email.toLowerCase().includes("arjun")) {
+          res = await api.auth.demoLogin();
+        } else {
+          res = await api.auth.login(email, "demo1234");
+        }
+        if (res.data?.user) {
+          setUser({
+            id: res.data.user.id,
+            name: res.data.user.name,
+            email: res.data.user.email,
+            phone: res.data.user.phone || "+91 98765 43210",
+            joinedDate: res.data.user.created_at ? res.data.user.created_at.split("T")[0] : new Date().toISOString().split("T")[0],
+            investorTier: res.data.user.investor_tier || "Tier 1 Verified (Demo)",
+            panMasked: res.data.user.pan_masked || "ABCDE****F",
+          });
+          setIsAuthenticated(true);
+          await refreshFromBackend();
+          return;
+        }
+      } catch (err) {
+        console.warn("Backend login notice:", err);
+      }
+    };
+    tryBackend();
+
     const u: UserProfile = {
       id: "usr_" + Math.random().toString(36).substring(2, 9),
       name: name || "Demo Investor",
@@ -466,6 +574,29 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   };
 
   const signUp = (name: string, email: string) => {
+    const tryBackend = async () => {
+      try {
+        const res = await api.auth.register(name, email, "demo1234");
+        if (res.data?.user) {
+          setUser({
+            id: res.data.user.id,
+            name: res.data.user.name,
+            email: res.data.user.email,
+            phone: res.data.user.phone || "+91 98765 43210",
+            joinedDate: new Date().toISOString().split("T")[0],
+            investorTier: res.data.user.investor_tier || "Tier 1 Verified (Demo)",
+            panMasked: res.data.user.pan_masked || "ABCDE****F",
+          });
+          setIsAuthenticated(true);
+          await refreshFromBackend();
+          return;
+        }
+      } catch (err) {
+        console.warn("Backend register notice:", err);
+      }
+    };
+    tryBackend();
+
     const u: UserProfile = {
       id: "usr_" + Math.random().toString(36).substring(2, 9),
       name,
@@ -480,16 +611,29 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   };
 
   const signOut = () => {
+    api.auth.logout();
     setIsAuthenticated(false);
   };
 
   const updateProfile = (updates: Partial<UserProfile>) => {
     if (!user) return;
+    api.profile.update({
+      full_name: updates.name,
+      phone: updates.phone,
+    }).catch(() => {});
     setUser({ ...user, ...updates });
   };
 
   // Funding action
   const addDemoFunds = (amount: number, note?: string): Transaction => {
+    // Sync with persistent backend wallet
+    api.wallet.deposit(amount, note).then((res) => {
+      if (res.data) {
+        setCashBalance(res.data.new_balance);
+        refreshFromBackend();
+      }
+    }).catch(() => {});
+
     const newTx: Transaction = {
       id: "tx_dep_" + Date.now().toString(36),
       type: "DEPOSIT",
@@ -603,6 +747,13 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         message: `Insufficient simulated cash (Available: ₹${cashBalance.toLocaleString("en-IN")}, Required: ₹${deployAmount.toLocaleString("en-IN")}). Please add demo funds first.`,
       };
     }
+
+    // Call persistent backend allocation engine
+    api.allocations.execute(deployAmount, plan.name).then((res) => {
+      if (res.data) {
+        refreshFromBackend();
+      }
+    }).catch(() => {});
 
     // Deduct cash ledger
     setCashBalance((prev) => fromPaise(toPaise(prev) - toPaise(deployAmount)));
@@ -833,6 +984,11 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 
   // Full reset demo data
   const resetDemoData = () => {
+    // Sync with backend demo reset
+    api.demo.reset().then(() => {
+      refreshFromBackend();
+    }).catch(() => {});
+
     setUser(SEED_USER);
     setIsAuthenticated(true);
     setCashBalance(50000);
@@ -854,6 +1010,11 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 
   // Reset to fresh, uninvested empty state
   const resetToEmptyState = () => {
+    // Sync with backend demo reset user
+    api.demo.resetUser().then(() => {
+      refreshFromBackend();
+    }).catch(() => {});
+
     setUser({
       id: "usr_demo_new",
       name: "New Evaluator",
@@ -883,7 +1044,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     setNotifications([
       {
         id: "notif_welcome",
-        title: "Welcome to NIVARA",
+        title: "Welcome to NIVARAN",
         message: "Your demo sandbox is ready with ₹1,00,000 available demo cash. Create your first automated plan to begin.",
         date: new Date().toISOString(),
         read: false,
@@ -946,6 +1107,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         rebalancePortfolio,
         resetDemoData,
         resetToEmptyState,
+        isBackendConnected,
+        refreshFromBackend,
 
         toasts,
         showToast,

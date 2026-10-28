@@ -7,7 +7,7 @@ class SoundManager {
 
   constructor() {
     if (typeof window !== "undefined") {
-      const stored = localStorage.getItem("nivara_sound_enabled");
+      const stored = localStorage.getItem("nivaran_sound_enabled");
       this.enabled = stored === "true";
     }
   }
@@ -19,7 +19,7 @@ class SoundManager {
   public setEnabled(enable: boolean) {
     this.enabled = enable;
     if (typeof window !== "undefined") {
-      localStorage.setItem("nivara_sound_enabled", enable ? "true" : "false");
+      localStorage.setItem("nivaran_sound_enabled", enable ? "true" : "false");
     }
   }
 

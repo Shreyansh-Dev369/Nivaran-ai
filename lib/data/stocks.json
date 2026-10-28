@@ -1,0 +1,2942 @@
+[
+  {
+    "symbol": "RELIANCE",
+    "name": "Reliance Industries Ltd",
+    "exchange": "NSE",
+    "sector": "Energy & Utilities",
+    "currentPrice": 2945.6,
+    "previousClose": 2918.2,
+    "change": 27.4,
+    "changePercent": 0.94,
+    "marketCapCr": 1993450,
+    "peRatio": 26.8,
+    "pbRatio": 2.15,
+    "divYield": 0.34,
+    "fiftyTwoWeekHigh": 3024.9,
+    "fiftyTwoWeekLow": 2220.3,
+    "beta": 0.88,
+    "riskLevel": "CONSERVATIVE",
+    "description": "India's largest private enterprise by market capitalization with diverse market-leading operations across energy refining, petrochemicals, telecommunications (Jio), and organized retail.",
+    "selectionRationale": "Serves as an essential core anchor in balanced Indian portfolios, combining steady petrochemical cash flows with rapid domestic telecom and retail growth engines.",
+    "keyRisks": [
+      "Global refining margin cyclicality",
+      "Large ongoing telecom 5G capital expenditures",
+      "Regulatory tariffs on energy exports"
+    ],
+    "history": [
+      {
+        "date": "2026-09-16",
+        "price": 2850.44
+      },
+      {
+        "date": "2026-09-17",
+        "price": 2784.18
+      },
+      {
+        "date": "2026-09-18",
+        "price": 2718.42
+      },
+      {
+        "date": "2026-09-19",
+        "price": 2670.42
+      },
+      {
+        "date": "2026-09-20",
+        "price": 2597.68
+      },
+      {
+        "date": "2026-09-21",
+        "price": 2573.79
+      },
+      {
+        "date": "2026-09-22",
+        "price": 2548.95
+      },
+      {
+        "date": "2026-09-23",
+        "price": 2546.7
+      },
+      {
+        "date": "2026-09-24",
+        "price": 2540.28
+      },
+      {
+        "date": "2026-09-25",
+        "price": 2598.52
+      },
+      {
+        "date": "2026-09-26",
+        "price": 2689.33
+      },
+      {
+        "date": "2026-09-27",
+        "price": 2749.01
+      },
+      {
+        "date": "2026-09-28",
+        "price": 2763.6
+      },
+      {
+        "date": "2026-09-29",
+        "price": 2793.9
+      },
+      {
+        "date": "2026-09-30",
+        "price": 2806.68
+      },
+      {
+        "date": "2026-10-01",
+        "price": 2731.19
+      },
+      {
+        "date": "2026-10-02",
+        "price": 2742.36
+      },
+      {
+        "date": "2026-10-03",
+        "price": 2731.31
+      },
+      {
+        "date": "2026-10-04",
+        "price": 2667.02
+      },
+      {
+        "date": "2026-10-05",
+        "price": 2677.49
+      },
+      {
+        "date": "2026-10-06",
+        "price": 2674.9
+      },
+      {
+        "date": "2026-10-07",
+        "price": 2722.08
+      },
+      {
+        "date": "2026-10-08",
+        "price": 2691.9
+      },
+      {
+        "date": "2026-10-09",
+        "price": 2642.87
+      },
+      {
+        "date": "2026-10-10",
+        "price": 2733.83
+      },
+      {
+        "date": "2026-10-11",
+        "price": 2745.17
+      },
+      {
+        "date": "2026-10-12",
+        "price": 2728.42
+      },
+      {
+        "date": "2026-10-13",
+        "price": 2785.58
+      },
+      {
+        "date": "2026-10-14",
+        "price": 2861.63
+      },
+      {
+        "date": "2026-10-15",
+        "price": 2945.6
+      }
+    ]
+  },
+  {
+    "symbol": "TCS",
+    "name": "Tata Consultancy Services Ltd",
+    "exchange": "NSE",
+    "sector": "Technology",
+    "currentPrice": 3892.4,
+    "previousClose": 3915,
+    "change": -22.6,
+    "changePercent": -0.58,
+    "marketCapCr": 1408200,
+    "peRatio": 29.4,
+    "pbRatio": 12.8,
+    "divYield": 1.45,
+    "fiftyTwoWeekHigh": 4254.75,
+    "fiftyTwoWeekLow": 3313,
+    "beta": 0.72,
+    "riskLevel": "CONSERVATIVE",
+    "description": "Global IT services, consulting, and business solutions leader, operating across 55 countries with world-class operating margins and strong enterprise client retention.",
+    "selectionRationale": "Unmatched balance sheet strength, pristine return on equity exceeding 45%, and exceptional shareholder cash returns via recurring dividends and buybacks.",
+    "keyRisks": [
+      "North American enterprise discretionary IT spending softness",
+      "Currency headwind against USD/EUR",
+      "AI-driven delivery model transformation risks"
+    ],
+    "history": [
+      {
+        "date": "2026-09-16",
+        "price": 3717.4
+      },
+      {
+        "date": "2026-09-17",
+        "price": 3708.89
+      },
+      {
+        "date": "2026-09-18",
+        "price": 3629.28
+      },
+      {
+        "date": "2026-09-19",
+        "price": 3547.24
+      },
+      {
+        "date": "2026-09-20",
+        "price": 3462.75
+      },
+      {
+        "date": "2026-09-21",
+        "price": 3403.84
+      },
+      {
+        "date": "2026-09-22",
+        "price": 3381.49
+      },
+      {
+        "date": "2026-09-23",
+        "price": 3352.83
+      },
+      {
+        "date": "2026-09-24",
+        "price": 3441.93
+      },
+      {
+        "date": "2026-09-25",
+        "price": 3495.24
+      },
+      {
+        "date": "2026-09-26",
+        "price": 3542.58
+      },
+      {
+        "date": "2026-09-27",
+        "price": 3645.38
+      },
+      {
+        "date": "2026-09-28",
+        "price": 3736.34
+      },
+      {
+        "date": "2026-09-29",
+        "price": 3795.73
+      },
+      {
+        "date": "2026-09-30",
+        "price": 3742.27
+      },
+      {
+        "date": "2026-10-01",
+        "price": 3658.91
+      },
+      {
+        "date": "2026-10-02",
+        "price": 3681.28
+      },
+      {
+        "date": "2026-10-03",
+        "price": 3685.75
+      },
+      {
+        "date": "2026-10-04",
+        "price": 3692.46
+      },
+      {
+        "date": "2026-10-05",
+        "price": 3614.21
+      },
+      {
+        "date": "2026-10-06",
+        "price": 3574.46
+      },
+      {
+        "date": "2026-10-07",
+        "price": 3588.41
+      },
+      {
+        "date": "2026-10-08",
+        "price": 3637.81
+      },
+      {
+        "date": "2026-10-09",
+        "price": 3635.22
+      },
+      {
+        "date": "2026-10-10",
+        "price": 3633.81
+      },
+      {
+        "date": "2026-10-11",
+        "price": 3714.71
+      },
+      {
+        "date": "2026-10-12",
+        "price": 3784.14
+      },
+      {
+        "date": "2026-10-13",
+        "price": 3789.52
+      },
+      {
+        "date": "2026-10-14",
+        "price": 3885.52
+      },
+      {
+        "date": "2026-10-15",
+        "price": 3892.4
+      }
+    ]
+  },
+  {
+    "symbol": "HDFCBANK",
+    "name": "HDFC Bank Ltd",
+    "exchange": "NSE",
+    "sector": "Banking & Finance",
+    "currentPrice": 1682.15,
+    "previousClose": 1668.5,
+    "change": 13.65,
+    "changePercent": 0.82,
+    "marketCapCr": 1280650,
+    "peRatio": 19.2,
+    "pbRatio": 2.7,
+    "divYield": 1.16,
+    "fiftyTwoWeekHigh": 1794,
+    "fiftyTwoWeekLow": 1363.55,
+    "beta": 1.05,
+    "riskLevel": "CONSERVATIVE",
+    "description": "India's largest private sector bank following its landmark parent mortgage merger, operating a retail and commercial banking network of over 8,700 branches across urban and rural India.",
+    "selectionRationale": "Systemically vital Indian lender trading at appealing post-merger valuation multiples with superior asset quality and expanding low-cost CASA deposit franchise.",
+    "keyRisks": [
+      "Credit-deposit ratio normalization hurdles",
+      "Integration frictions post parent merger",
+      "Elevated deposit competition among domestic peers"
+    ],
+    "history": [
+      {
+        "date": "2026-09-16",
+        "price": 1604.8
+      },
+      {
+        "date": "2026-09-17",
+        "price": 1602.63
+      },
+      {
+        "date": "2026-09-18",
+        "price": 1607.46
+      },
+      {
+        "date": "2026-09-19",
+        "price": 1579.81
+      },
+      {
+        "date": "2026-09-20",
+        "price": 1596.27
+      },
+      {
+        "date": "2026-09-21",
+        "price": 1571.43
+      },
+      {
+        "date": "2026-09-22",
+        "price": 1523.66
+      },
+      {
+        "date": "2026-09-23",
+        "price": 1559.25
+      },
+      {
+        "date": "2026-09-24",
+        "price": 1597.98
+      },
+      {
+        "date": "2026-09-25",
+        "price": 1636.93
+      },
+      {
+        "date": "2026-09-26",
+        "price": 1665.44
+      },
+      {
+        "date": "2026-09-27",
+        "price": 1723.78
+      },
+      {
+        "date": "2026-09-28",
+        "price": 1800.28
+      },
+      {
+        "date": "2026-09-29",
+        "price": 1774.6
+      },
+      {
+        "date": "2026-09-30",
+        "price": 1799.93
+      },
+      {
+        "date": "2026-10-01",
+        "price": 1810.66
+      },
+      {
+        "date": "2026-10-02",
+        "price": 1750.92
+      },
+      {
+        "date": "2026-10-03",
+        "price": 1703.46
+      },
+      {
+        "date": "2026-10-04",
+        "price": 1679.27
+      },
+      {
+        "date": "2026-10-05",
+        "price": 1698.68
+      },
+      {
+        "date": "2026-10-06",
+        "price": 1651.66
+      },
+      {
+        "date": "2026-10-07",
+        "price": 1596.15
+      },
+      {
+        "date": "2026-10-08",
+        "price": 1563.98
+      },
+      {
+        "date": "2026-10-09",
+        "price": 1562.55
+      },
+      {
+        "date": "2026-10-10",
+        "price": 1538.78
+      },
+      {
+        "date": "2026-10-11",
+        "price": 1524.77
+      },
+      {
+        "date": "2026-10-12",
+        "price": 1590.15
+      },
+      {
+        "date": "2026-10-13",
+        "price": 1641.87
+      },
+      {
+        "date": "2026-10-14",
+        "price": 1620.35
+      },
+      {
+        "date": "2026-10-15",
+        "price": 1682.15
+      }
+    ]
+  },
+  {
+    "symbol": "INFOSYS",
+    "name": "Infosys Ltd",
+    "exchange": "NSE",
+    "sector": "Technology",
+    "currentPrice": 1545.8,
+    "previousClose": 1530.25,
+    "change": 15.55,
+    "changePercent": 1.02,
+    "marketCapCr": 641500,
+    "peRatio": 24.8,
+    "pbRatio": 7.9,
+    "divYield": 2.35,
+    "fiftyTwoWeekHigh": 1733,
+    "fiftyTwoWeekLow": 1358.35,
+    "beta": 0.95,
+    "riskLevel": "BALANCED",
+    "description": "Next-generation digital services and consulting powerhouse known for large deal signings in enterprise cloud migrations and Topaz generative AI deployments.",
+    "selectionRationale": "Generates high free cash flows with an attractive 2.3% dividend yield; well-positioned for recovery in corporate digital transformation programs.",
+    "keyRisks": [
+      "High concentration in BFSI clients overseas",
+      "Executive attrition in key vertical segments",
+      "Prolonged enterprise client decision cycles"
+    ],
+    "history": [
+      {
+        "date": "2026-09-16",
+        "price": 1384.49
+      },
+      {
+        "date": "2026-09-17",
+        "price": 1367
+      },
+      {
+        "date": "2026-09-18",
+        "price": 1380.69
+      },
+      {
+        "date": "2026-09-19",
+        "price": 1395.06
+      },
+      {
+        "date": "2026-09-20",
+        "price": 1339.2
+      },
+      {
+        "date": "2026-09-21",
+        "price": 1285.73
+      },
+      {
+        "date": "2026-09-22",
+        "price": 1303.37
+      },
+      {
+        "date": "2026-09-23",
+        "price": 1308.16
+      },
+      {
+        "date": "2026-09-24",
+        "price": 1296.55
+      },
+      {
+        "date": "2026-09-25",
+        "price": 1351.21
+      },
+      {
+        "date": "2026-09-26",
+        "price": 1340.14
+      },
+      {
+        "date": "2026-09-27",
+        "price": 1341.86
+      },
+      {
+        "date": "2026-09-28",
+        "price": 1376.66
+      },
+      {
+        "date": "2026-09-29",
+        "price": 1429.17
+      },
+      {
+        "date": "2026-09-30",
+        "price": 1476.32
+      },
+      {
+        "date": "2026-10-01",
+        "price": 1509.5
+      },
+      {
+        "date": "2026-10-02",
+        "price": 1448.19
+      },
+      {
+        "date": "2026-10-03",
+        "price": 1436.52
+      },
+      {
+        "date": "2026-10-04",
+        "price": 1431.41
+      },
+      {
+        "date": "2026-10-05",
+        "price": 1376.39
+      },
+      {
+        "date": "2026-10-06",
+        "price": 1329.56
+      },
+      {
+        "date": "2026-10-07",
+        "price": 1309.55
+      },
+      {
+        "date": "2026-10-08",
+        "price": 1341.09
+      },
+      {
+        "date": "2026-10-09",
+        "price": 1322.03
+      },
+      {
+        "date": "2026-10-10",
+        "price": 1382.89
+      },
+      {
+        "date": "2026-10-11",
+        "price": 1416.72
+      },
+      {
+        "date": "2026-10-12",
+        "price": 1474.76
+      },
+      {
+        "date": "2026-10-13",
+        "price": 1528.24
+      },
+      {
+        "date": "2026-10-14",
+        "price": 1581.07
+      },
+      {
+        "date": "2026-10-15",
+        "price": 1545.8
+      }
+    ]
+  },
+  {
+    "symbol": "ICICIBANK",
+    "name": "ICICI Bank Ltd",
+    "exchange": "NSE",
+    "sector": "Banking & Finance",
+    "currentPrice": 1195.3,
+    "previousClose": 1184.1,
+    "change": 11.2,
+    "changePercent": 0.95,
+    "marketCapCr": 840200,
+    "peRatio": 17.5,
+    "pbRatio": 3.1,
+    "divYield": 0.85,
+    "fiftyTwoWeekHigh": 1257.8,
+    "fiftyTwoWeekLow": 914,
+    "beta": 1.12,
+    "riskLevel": "BALANCED",
+    "description": "Premier Indian private sector bank recognized for superior underwriting standards, industry-leading return on assets, and digital architecture.",
+    "selectionRationale": "Consistent outperformer in core operating profitability with lowest net non-performing asset ratios among private Indian financial institutions.",
+    "keyRisks": [
+      "Unsecured retail credit segment seasoning",
+      "Interest margin compression in rate-easing cycles",
+      "Macroeconomic slow-down in corporate loan demand"
+    ],
+    "history": [
+      {
+        "date": "2026-09-16",
+        "price": 1170.03
+      },
+      {
+        "date": "2026-09-17",
+        "price": 1172.59
+      },
+      {
+        "date": "2026-09-18",
+        "price": 1172.47
+      },
+      {
+        "date": "2026-09-19",
+        "price": 1151.79
+      },
+      {
+        "date": "2026-09-20",
+        "price": 1151.7
+      },
+      {
+        "date": "2026-09-21",
+        "price": 1111.12
+      },
+      {
+        "date": "2026-09-22",
+        "price": 1087.32
+      },
+      {
+        "date": "2026-09-23",
+        "price": 1062.28
+      },
+      {
+        "date": "2026-09-24",
+        "price": 1067.5
+      },
+      {
+        "date": "2026-09-25",
+        "price": 1115.19
+      },
+      {
+        "date": "2026-09-26",
+        "price": 1164.13
+      },
+      {
+        "date": "2026-09-27",
+        "price": 1219.01
+      },
+      {
+        "date": "2026-09-28",
+        "price": 1222.1
+      },
+      {
+        "date": "2026-09-29",
+        "price": 1239.24
+      },
+      {
+        "date": "2026-09-30",
+        "price": 1268.56
+      },
+      {
+        "date": "2026-10-01",
+        "price": 1236.84
+      },
+      {
+        "date": "2026-10-02",
+        "price": 1199.72
+      },
+      {
+        "date": "2026-10-03",
+        "price": 1184.72
+      },
+      {
+        "date": "2026-10-04",
+        "price": 1158.6
+      },
+      {
+        "date": "2026-10-05",
+        "price": 1153.32
+      },
+      {
+        "date": "2026-10-06",
+        "price": 1143.18
+      },
+      {
+        "date": "2026-10-07",
+        "price": 1126.74
+      },
+      {
+        "date": "2026-10-08",
+        "price": 1115.68
+      },
+      {
+        "date": "2026-10-09",
+        "price": 1108.04
+      },
+      {
+        "date": "2026-10-10",
+        "price": 1096.46
+      },
+      {
+        "date": "2026-10-11",
+        "price": 1122.1
+      },
+      {
+        "date": "2026-10-12",
+        "price": 1171.32
+      },
+      {
+        "date": "2026-10-13",
+        "price": 1171.49
+      },
+      {
+        "date": "2026-10-14",
+        "price": 1171.72
+      },
+      {
+        "date": "2026-10-15",
+        "price": 1195.3
+      }
+    ]
+  },
+  {
+    "symbol": "LT",
+    "name": "Larsen & Toubro Ltd",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "currentPrice": 3640.75,
+    "previousClose": 3615,
+    "change": 25.75,
+    "changePercent": 0.71,
+    "marketCapCr": 500350,
+    "peRatio": 37.2,
+    "pbRatio": 5.6,
+    "divYield": 0.78,
+    "fiftyTwoWeekHigh": 3948.6,
+    "fiftyTwoWeekLow": 2865,
+    "beta": 1.18,
+    "riskLevel": "BALANCED",
+    "description": "Multinational conglomerate engaged in engineering, procurement, and construction (EPC) projects across infrastructure, defense, hydrocarbon, and green energy.",
+    "selectionRationale": "Prime beneficiary of India's multi-year government capital expenditure push and rising Middle Eastern infrastructure orders, backed by a ₹4.7+ Lakh Crore order book.",
+    "keyRisks": [
+      "Raw material inflation (steel, cement) impacting fixed-price contracts",
+      "Working capital cycle elongation",
+      "Middle Eastern geopolitical turbulence"
+    ],
+    "history": [
+      {
+        "date": "2026-09-16",
+        "price": 3805.21
+      },
+      {
+        "date": "2026-09-17",
+        "price": 3736.81
+      },
+      {
+        "date": "2026-09-18",
+        "price": 3753.64
+      },
+      {
+        "date": "2026-09-19",
+        "price": 3689.88
+      },
+      {
+        "date": "2026-09-20",
+        "price": 3544.33
+      },
+      {
+        "date": "2026-09-21",
+        "price": 3456.86
+      },
+      {
+        "date": "2026-09-22",
+        "price": 3400.26
+      },
+      {
+        "date": "2026-09-23",
+        "price": 3389.05
+      },
+      {
+        "date": "2026-09-24",
+        "price": 3317.32
+      },
+      {
+        "date": "2026-09-25",
+        "price": 3416.77
+      },
+      {
+        "date": "2026-09-26",
+        "price": 3597.69
+      },
+      {
+        "date": "2026-09-27",
+        "price": 3717.57
+      },
+      {
+        "date": "2026-09-28",
+        "price": 3847.38
+      },
+      {
+        "date": "2026-09-29",
+        "price": 3851.97
+      },
+      {
+        "date": "2026-09-30",
+        "price": 3924.4
+      },
+      {
+        "date": "2026-10-01",
+        "price": 3977.79
+      },
+      {
+        "date": "2026-10-02",
+        "price": 3926.71
+      },
+      {
+        "date": "2026-10-03",
+        "price": 3768.02
+      },
+      {
+        "date": "2026-10-04",
+        "price": 3663.85
+      },
+      {
+        "date": "2026-10-05",
+        "price": 3539.16
+      },
+      {
+        "date": "2026-10-06",
+        "price": 3464.22
+      },
+      {
+        "date": "2026-10-07",
+        "price": 3568.17
+      },
+      {
+        "date": "2026-10-08",
+        "price": 3459.56
+      },
+      {
+        "date": "2026-10-09",
+        "price": 3493.05
+      },
+      {
+        "date": "2026-10-10",
+        "price": 3436.87
+      },
+      {
+        "date": "2026-10-11",
+        "price": 3572.57
+      },
+      {
+        "date": "2026-10-12",
+        "price": 3655.07
+      },
+      {
+        "date": "2026-10-13",
+        "price": 3775.78
+      },
+      {
+        "date": "2026-10-14",
+        "price": 3691.94
+      },
+      {
+        "date": "2026-10-15",
+        "price": 3640.75
+      }
+    ]
+  },
+  {
+    "symbol": "ITC",
+    "name": "ITC Ltd",
+    "exchange": "NSE",
+    "sector": "Consumer Goods",
+    "currentPrice": 488.4,
+    "previousClose": 485.1,
+    "change": 3.3,
+    "changePercent": 0.68,
+    "marketCapCr": 609800,
+    "peRatio": 28.5,
+    "pbRatio": 8.2,
+    "divYield": 2.82,
+    "fiftyTwoWeekHigh": 510.65,
+    "fiftyTwoWeekLow": 399.3,
+    "beta": 0.58,
+    "riskLevel": "CONSERVATIVE",
+    "description": "Diversified FMCG leader with dominant market share in legal cigarettes, along with rapidly scaling branded packaged foods, personal care, paperboards, and agri-business.",
+    "selectionRationale": "Classic defensive cash cow yielding nearly 3% with virtually debt-free balance sheets and expanding non-cigarette FMCG profit margins.",
+    "keyRisks": [
+      "National excise duty hikes on tobacco",
+      "Input cost volatility in agricultural commodities",
+      "Intense competition from regional FMCG disruptors"
+    ],
+    "history": [
+      {
+        "date": "2026-09-16",
+        "price": 422.28
+      },
+      {
+        "date": "2026-09-17",
+        "price": 424.11
+      },
+      {
+        "date": "2026-09-18",
+        "price": 411.22
+      },
+      {
+        "date": "2026-09-19",
+        "price": 410.45
+      },
+      {
+        "date": "2026-09-20",
+        "price": 409.3
+      },
+      {
+        "date": "2026-09-21",
+        "price": 411.32
+      },
+      {
+        "date": "2026-09-22",
+        "price": 414.72
+      },
+      {
+        "date": "2026-09-23",
+        "price": 417.48
+      },
+      {
+        "date": "2026-09-24",
+        "price": 419.8
+      },
+      {
+        "date": "2026-09-25",
+        "price": 431.95
+      },
+      {
+        "date": "2026-09-26",
+        "price": 447.69
+      },
+      {
+        "date": "2026-09-27",
+        "price": 451.5
+      },
+      {
+        "date": "2026-09-28",
+        "price": 466.54
+      },
+      {
+        "date": "2026-09-29",
+        "price": 463.61
+      },
+      {
+        "date": "2026-09-30",
+        "price": 460.71
+      },
+      {
+        "date": "2026-10-01",
+        "price": 465.1
+      },
+      {
+        "date": "2026-10-02",
+        "price": 452.22
+      },
+      {
+        "date": "2026-10-03",
+        "price": 453.73
+      },
+      {
+        "date": "2026-10-04",
+        "price": 444.28
+      },
+      {
+        "date": "2026-10-05",
+        "price": 442.77
+      },
+      {
+        "date": "2026-10-06",
+        "price": 440.91
+      },
+      {
+        "date": "2026-10-07",
+        "price": 431.82
+      },
+      {
+        "date": "2026-10-08",
+        "price": 440.48
+      },
+      {
+        "date": "2026-10-09",
+        "price": 442.05
+      },
+      {
+        "date": "2026-10-10",
+        "price": 455.57
+      },
+      {
+        "date": "2026-10-11",
+        "price": 455.58
+      },
+      {
+        "date": "2026-10-12",
+        "price": 467.45
+      },
+      {
+        "date": "2026-10-13",
+        "price": 466.39
+      },
+      {
+        "date": "2026-10-14",
+        "price": 477.02
+      },
+      {
+        "date": "2026-10-15",
+        "price": 488.4
+      }
+    ]
+  },
+  {
+    "symbol": "HINDUNILVR",
+    "name": "Hindustan Unilever Ltd",
+    "exchange": "NSE",
+    "sector": "Consumer Goods",
+    "currentPrice": 2470,
+    "previousClose": 2492.5,
+    "change": -22.5,
+    "changePercent": -0.9,
+    "marketCapCr": 580400,
+    "peRatio": 56.4,
+    "pbRatio": 11.2,
+    "divYield": 1.7,
+    "fiftyTwoWeekHigh": 2769.65,
+    "fiftyTwoWeekLow": 2172.05,
+    "beta": 0.55,
+    "riskLevel": "CONSERVATIVE",
+    "description": "India's largest FMCG company, reaching 9 out of 10 Indian households daily through iconic household brands including Surf Excel, Dove, Sunsilk, and Lifebuoy.",
+    "selectionRationale": "Deepest rural and urban distribution moat in India, offering defensive downside protection and stable long-term demographic consumption tailwinds.",
+    "keyRisks": [
+      "Rural consumption recovery pacing",
+      "Local unorganized competitors undercutting pricing",
+      "Royalty fee increases paid to parent entity Unilever"
+    ],
+    "history": [
+      {
+        "date": "2026-09-16",
+        "price": 2219.11
+      },
+      {
+        "date": "2026-09-17",
+        "price": 2166.55
+      },
+      {
+        "date": "2026-09-18",
+        "price": 2101.61
+      },
+      {
+        "date": "2026-09-19",
+        "price": 2089.73
+      },
+      {
+        "date": "2026-09-20",
+        "price": 2043.67
+      },
+      {
+        "date": "2026-09-21",
+        "price": 2022.24
+      },
+      {
+        "date": "2026-09-22",
+        "price": 2027.63
+      },
+      {
+        "date": "2026-09-23",
+        "price": 2038.19
+      },
+      {
+        "date": "2026-09-24",
+        "price": 2074.26
+      },
+      {
+        "date": "2026-09-25",
+        "price": 2095.84
+      },
+      {
+        "date": "2026-09-26",
+        "price": 2138.55
+      },
+      {
+        "date": "2026-09-27",
+        "price": 2206.32
+      },
+      {
+        "date": "2026-09-28",
+        "price": 2273.05
+      },
+      {
+        "date": "2026-09-29",
+        "price": 2323.85
+      },
+      {
+        "date": "2026-09-30",
+        "price": 2303
+      },
+      {
+        "date": "2026-10-01",
+        "price": 2332.2
+      },
+      {
+        "date": "2026-10-02",
+        "price": 2340.42
+      },
+      {
+        "date": "2026-10-03",
+        "price": 2307.99
+      },
+      {
+        "date": "2026-10-04",
+        "price": 2311.39
+      },
+      {
+        "date": "2026-10-05",
+        "price": 2323.45
+      },
+      {
+        "date": "2026-10-06",
+        "price": 2329.73
+      },
+      {
+        "date": "2026-10-07",
+        "price": 2321.53
+      },
+      {
+        "date": "2026-10-08",
+        "price": 2302.31
+      },
+      {
+        "date": "2026-10-09",
+        "price": 2332
+      },
+      {
+        "date": "2026-10-10",
+        "price": 2358.71
+      },
+      {
+        "date": "2026-10-11",
+        "price": 2349.52
+      },
+      {
+        "date": "2026-10-12",
+        "price": 2420.86
+      },
+      {
+        "date": "2026-10-13",
+        "price": 2483.71
+      },
+      {
+        "date": "2026-10-14",
+        "price": 2469.11
+      },
+      {
+        "date": "2026-10-15",
+        "price": 2470
+      }
+    ]
+  },
+  {
+    "symbol": "BHARTIARTL",
+    "name": "Bharti Airtel Ltd",
+    "exchange": "NSE",
+    "sector": "Technology",
+    "currentPrice": 1580.2,
+    "previousClose": 1562,
+    "change": 18.2,
+    "changePercent": 1.17,
+    "marketCapCr": 902150,
+    "peRatio": 64.2,
+    "pbRatio": 9.8,
+    "divYield": 0.52,
+    "fiftyTwoWeekHigh": 1618,
+    "fiftyTwoWeekLow": 901,
+    "beta": 0.82,
+    "riskLevel": "GROWTH",
+    "description": "Leading global telecommunications company with 500M+ customers across India and 14 African nations, driving industry-leading mobile Average Revenue Per User (ARPU).",
+    "selectionRationale": "Rapidly benefiting from Indian telecom duopoly dynamics, disciplined tariff hikes, high-margin enterprise cloud connectivity, and homes broadband expansion.",
+    "keyRisks": [
+      "Intense 5G subscriber acquisition wars",
+      "Foreign currency devaluations in African subsidiary markets",
+      "High debt related to past spectrum auction bids"
+    ],
+    "history": [
+      {
+        "date": "2026-09-16",
+        "price": 1317.15
+      },
+      {
+        "date": "2026-09-17",
+        "price": 1312.63
+      },
+      {
+        "date": "2026-09-18",
+        "price": 1297.56
+      },
+      {
+        "date": "2026-09-19",
+        "price": 1250.11
+      },
+      {
+        "date": "2026-09-20",
+        "price": 1255.39
+      },
+      {
+        "date": "2026-09-21",
+        "price": 1281.36
+      },
+      {
+        "date": "2026-09-22",
+        "price": 1318.42
+      },
+      {
+        "date": "2026-09-23",
+        "price": 1372.3
+      },
+      {
+        "date": "2026-09-24",
+        "price": 1404.57
+      },
+      {
+        "date": "2026-09-25",
+        "price": 1389.8
+      },
+      {
+        "date": "2026-09-26",
+        "price": 1359.14
+      },
+      {
+        "date": "2026-09-27",
+        "price": 1434.06
+      },
+      {
+        "date": "2026-09-28",
+        "price": 1399.79
+      },
+      {
+        "date": "2026-09-29",
+        "price": 1370.39
+      },
+      {
+        "date": "2026-09-30",
+        "price": 1376.22
+      },
+      {
+        "date": "2026-10-01",
+        "price": 1343.61
+      },
+      {
+        "date": "2026-10-02",
+        "price": 1324.66
+      },
+      {
+        "date": "2026-10-03",
+        "price": 1351.78
+      },
+      {
+        "date": "2026-10-04",
+        "price": 1351.91
+      },
+      {
+        "date": "2026-10-05",
+        "price": 1333.19
+      },
+      {
+        "date": "2026-10-06",
+        "price": 1332.31
+      },
+      {
+        "date": "2026-10-07",
+        "price": 1346.24
+      },
+      {
+        "date": "2026-10-08",
+        "price": 1362.78
+      },
+      {
+        "date": "2026-10-09",
+        "price": 1360.83
+      },
+      {
+        "date": "2026-10-10",
+        "price": 1402.06
+      },
+      {
+        "date": "2026-10-11",
+        "price": 1471.13
+      },
+      {
+        "date": "2026-10-12",
+        "price": 1554.47
+      },
+      {
+        "date": "2026-10-13",
+        "price": 1531.02
+      },
+      {
+        "date": "2026-10-14",
+        "price": 1546.65
+      },
+      {
+        "date": "2026-10-15",
+        "price": 1580.2
+      }
+    ]
+  },
+  {
+    "symbol": "TATAMOTORS",
+    "name": "Tata Motors Ltd",
+    "exchange": "NSE",
+    "sector": "Automobile",
+    "currentPrice": 940.6,
+    "previousClose": 928.1,
+    "change": 12.5,
+    "changePercent": 1.35,
+    "marketCapCr": 346500,
+    "peRatio": 10.4,
+    "pbRatio": 3.4,
+    "divYield": 0.65,
+    "fiftyTwoWeekHigh": 1179.05,
+    "fiftyTwoWeekLow": 621.75,
+    "beta": 1.45,
+    "riskLevel": "GROWTH",
+    "description": "Pioneering Indian automaker leading the domestic electric passenger vehicle revolution and owner of luxury British icon Jaguar Land Rover (JLR).",
+    "selectionRationale": "Turnaround champion with massive debt deleveraging, 70%+ Indian EV passenger market share, and strong order backlogs in premium JLR models.",
+    "keyRisks": [
+      "Global luxury EV adoption decelerations",
+      "Domestic commercial vehicle cyclical down-turn",
+      "Supply chain disruptions for specialty semiconductors"
+    ],
+    "history": [
+      {
+        "date": "2026-09-16",
+        "price": 741.2
+      },
+      {
+        "date": "2026-09-17",
+        "price": 697.83
+      },
+      {
+        "date": "2026-09-18",
+        "price": 690.35
+      },
+      {
+        "date": "2026-09-19",
+        "price": 715.65
+      },
+      {
+        "date": "2026-09-20",
+        "price": 673.51
+      },
+      {
+        "date": "2026-09-21",
+        "price": 691.98
+      },
+      {
+        "date": "2026-09-22",
+        "price": 687.93
+      },
+      {
+        "date": "2026-09-23",
+        "price": 706.73
+      },
+      {
+        "date": "2026-09-24",
+        "price": 692.99
+      },
+      {
+        "date": "2026-09-25",
+        "price": 734.69
+      },
+      {
+        "date": "2026-09-26",
+        "price": 773.51
+      },
+      {
+        "date": "2026-09-27",
+        "price": 805.95
+      },
+      {
+        "date": "2026-09-28",
+        "price": 825.26
+      },
+      {
+        "date": "2026-09-29",
+        "price": 846.01
+      },
+      {
+        "date": "2026-09-30",
+        "price": 869.53
+      },
+      {
+        "date": "2026-10-01",
+        "price": 876.18
+      },
+      {
+        "date": "2026-10-02",
+        "price": 833.01
+      },
+      {
+        "date": "2026-10-03",
+        "price": 839.71
+      },
+      {
+        "date": "2026-10-04",
+        "price": 834.71
+      },
+      {
+        "date": "2026-10-05",
+        "price": 833.81
+      },
+      {
+        "date": "2026-10-06",
+        "price": 794.77
+      },
+      {
+        "date": "2026-10-07",
+        "price": 800.4
+      },
+      {
+        "date": "2026-10-08",
+        "price": 834.71
+      },
+      {
+        "date": "2026-10-09",
+        "price": 862.04
+      },
+      {
+        "date": "2026-10-10",
+        "price": 920.88
+      },
+      {
+        "date": "2026-10-11",
+        "price": 888.52
+      },
+      {
+        "date": "2026-10-12",
+        "price": 908.36
+      },
+      {
+        "date": "2026-10-13",
+        "price": 926.25
+      },
+      {
+        "date": "2026-10-14",
+        "price": 919.7
+      },
+      {
+        "date": "2026-10-15",
+        "price": 940.6
+      }
+    ]
+  },
+  {
+    "symbol": "SUNPHARMA",
+    "name": "Sun Pharmaceutical Industries Ltd",
+    "exchange": "NSE",
+    "sector": "Healthcare & Pharma",
+    "currentPrice": 1820.4,
+    "previousClose": 1810,
+    "change": 10.4,
+    "changePercent": 0.57,
+    "marketCapCr": 436700,
+    "peRatio": 41.5,
+    "pbRatio": 6.8,
+    "divYield": 0.74,
+    "fiftyTwoWeekHigh": 1888,
+    "fiftyTwoWeekLow": 1078.6,
+    "beta": 0.62,
+    "riskLevel": "BALANCED",
+    "description": "India's largest pharmaceutical company and the world's 4th largest specialty generic manufacturer, possessing high-margin global dermatology and ophthalmology franchises.",
+    "selectionRationale": "High barriers to entry in branded global specialty drugs, defensive earnings visibility, and strong domestic prescription market leadership.",
+    "keyRisks": [
+      "US FDA regulatory inspection observations at manufacturing plants",
+      "Pricing pressure in generic formulations",
+      "Clinical trial delays in innovative specialty pipeline"
+    ],
+    "history": [
+      {
+        "date": "2026-09-16",
+        "price": 1600.51
+      },
+      {
+        "date": "2026-09-17",
+        "price": 1574.81
+      },
+      {
+        "date": "2026-09-18",
+        "price": 1517.41
+      },
+      {
+        "date": "2026-09-19",
+        "price": 1518.62
+      },
+      {
+        "date": "2026-09-20",
+        "price": 1530.31
+      },
+      {
+        "date": "2026-09-21",
+        "price": 1522.36
+      },
+      {
+        "date": "2026-09-22",
+        "price": 1550.38
+      },
+      {
+        "date": "2026-09-23",
+        "price": 1553.67
+      },
+      {
+        "date": "2026-09-24",
+        "price": 1533.88
+      },
+      {
+        "date": "2026-09-25",
+        "price": 1554.35
+      },
+      {
+        "date": "2026-09-26",
+        "price": 1608.38
+      },
+      {
+        "date": "2026-09-27",
+        "price": 1668.56
+      },
+      {
+        "date": "2026-09-28",
+        "price": 1723.07
+      },
+      {
+        "date": "2026-09-29",
+        "price": 1727.74
+      },
+      {
+        "date": "2026-09-30",
+        "price": 1721.48
+      },
+      {
+        "date": "2026-10-01",
+        "price": 1722.73
+      },
+      {
+        "date": "2026-10-02",
+        "price": 1714.07
+      },
+      {
+        "date": "2026-10-03",
+        "price": 1678.32
+      },
+      {
+        "date": "2026-10-04",
+        "price": 1634.5
+      },
+      {
+        "date": "2026-10-05",
+        "price": 1624.81
+      },
+      {
+        "date": "2026-10-06",
+        "price": 1646.83
+      },
+      {
+        "date": "2026-10-07",
+        "price": 1678.12
+      },
+      {
+        "date": "2026-10-08",
+        "price": 1716.48
+      },
+      {
+        "date": "2026-10-09",
+        "price": 1716.56
+      },
+      {
+        "date": "2026-10-10",
+        "price": 1699.38
+      },
+      {
+        "date": "2026-10-11",
+        "price": 1708.43
+      },
+      {
+        "date": "2026-10-12",
+        "price": 1698.61
+      },
+      {
+        "date": "2026-10-13",
+        "price": 1735.24
+      },
+      {
+        "date": "2026-10-14",
+        "price": 1783.01
+      },
+      {
+        "date": "2026-10-15",
+        "price": 1820.4
+      }
+    ]
+  },
+  {
+    "symbol": "BAJFINANCE",
+    "name": "Bajaj Finance Ltd",
+    "exchange": "NSE",
+    "sector": "Banking & Finance",
+    "currentPrice": 7120,
+    "previousClose": 7080,
+    "change": 40,
+    "changePercent": 0.56,
+    "marketCapCr": 440800,
+    "peRatio": 29.8,
+    "pbRatio": 5.4,
+    "divYield": 0.51,
+    "fiftyTwoWeekHigh": 8192,
+    "fiftyTwoWeekLow": 6355,
+    "beta": 1.28,
+    "riskLevel": "GROWTH",
+    "description": "Fintech pioneer and premier non-banking financial company (NBFC) in India with over 80 million active customers across consumer durables, personal, SME, and mortgage lending.",
+    "selectionRationale": "Omnichannel customer acquisition machine delivering consistent 25%+ return on equity with rapid cross-selling of payments, insurance, and wealth products.",
+    "keyRisks": [
+      "Stricter RBI regulatory oversight on unsecured consumer credit",
+      "Increasing competition from private banks in consumer durable financing",
+      "Credit cost creep in rural B2C loans"
+    ],
+    "history": [
+      {
+        "date": "2026-09-16",
+        "price": 6092.57
+      },
+      {
+        "date": "2026-09-17",
+        "price": 6293.64
+      },
+      {
+        "date": "2026-09-18",
+        "price": 6437.41
+      },
+      {
+        "date": "2026-09-19",
+        "price": 6324.62
+      },
+      {
+        "date": "2026-09-20",
+        "price": 6376.7
+      },
+      {
+        "date": "2026-09-21",
+        "price": 6294
+      },
+      {
+        "date": "2026-09-22",
+        "price": 6498.76
+      },
+      {
+        "date": "2026-09-23",
+        "price": 6356.01
+      },
+      {
+        "date": "2026-09-24",
+        "price": 6679.97
+      },
+      {
+        "date": "2026-09-25",
+        "price": 6811.42
+      },
+      {
+        "date": "2026-09-26",
+        "price": 6863
+      },
+      {
+        "date": "2026-09-27",
+        "price": 7162.94
+      },
+      {
+        "date": "2026-09-28",
+        "price": 6994.48
+      },
+      {
+        "date": "2026-09-29",
+        "price": 6852.86
+      },
+      {
+        "date": "2026-09-30",
+        "price": 6899.01
+      },
+      {
+        "date": "2026-10-01",
+        "price": 6677.9
+      },
+      {
+        "date": "2026-10-02",
+        "price": 6712.49
+      },
+      {
+        "date": "2026-10-03",
+        "price": 6586.61
+      },
+      {
+        "date": "2026-10-04",
+        "price": 6551.66
+      },
+      {
+        "date": "2026-10-05",
+        "price": 6744.57
+      },
+      {
+        "date": "2026-10-06",
+        "price": 6493.17
+      },
+      {
+        "date": "2026-10-07",
+        "price": 6656.01
+      },
+      {
+        "date": "2026-10-08",
+        "price": 6718.37
+      },
+      {
+        "date": "2026-10-09",
+        "price": 6788.52
+      },
+      {
+        "date": "2026-10-10",
+        "price": 6897.52
+      },
+      {
+        "date": "2026-10-11",
+        "price": 6981.25
+      },
+      {
+        "date": "2026-10-12",
+        "price": 6940.89
+      },
+      {
+        "date": "2026-10-13",
+        "price": 6749.15
+      },
+      {
+        "date": "2026-10-14",
+        "price": 6960.42
+      },
+      {
+        "date": "2026-10-15",
+        "price": 7120
+      }
+    ]
+  },
+  {
+    "symbol": "SBIN",
+    "name": "State Bank of India",
+    "exchange": "NSE",
+    "sector": "Banking & Finance",
+    "currentPrice": 812.3,
+    "previousClose": 805.5,
+    "change": 6.8,
+    "changePercent": 0.84,
+    "marketCapCr": 724900,
+    "peRatio": 10.8,
+    "pbRatio": 1.5,
+    "divYield": 1.68,
+    "fiftyTwoWeekHigh": 912.1,
+    "fiftyTwoWeekLow": 555.25,
+    "beta": 1.22,
+    "riskLevel": "BALANCED",
+    "description": "The nation's flagship public sector financial institution commanding over 22% of total domestic credit and deposit market share, with 22,000+ branches.",
+    "selectionRationale": "Compelling valuation discount, robust corporate balance sheet cleanup, and unmatched reach into government infrastructure and agricultural financing.",
+    "keyRisks": [
+      "Priority sector lending slippages",
+      "Public sector wage and pension liabilities",
+      "Government policy lending directives"
+    ],
+    "history": [
+      {
+        "date": "2026-09-16",
+        "price": 971.24
+      },
+      {
+        "date": "2026-09-17",
+        "price": 939.09
+      },
+      {
+        "date": "2026-09-18",
+        "price": 929.87
+      },
+      {
+        "date": "2026-09-19",
+        "price": 948.66
+      },
+      {
+        "date": "2026-09-20",
+        "price": 950.92
+      },
+      {
+        "date": "2026-09-21",
+        "price": 920.21
+      },
+      {
+        "date": "2026-09-22",
+        "price": 901.35
+      },
+      {
+        "date": "2026-09-23",
+        "price": 880.49
+      },
+      {
+        "date": "2026-09-24",
+        "price": 857.94
+      },
+      {
+        "date": "2026-09-25",
+        "price": 842.8
+      },
+      {
+        "date": "2026-09-26",
+        "price": 829.95
+      },
+      {
+        "date": "2026-09-27",
+        "price": 823.12
+      },
+      {
+        "date": "2026-09-28",
+        "price": 835.07
+      },
+      {
+        "date": "2026-09-29",
+        "price": 835.15
+      },
+      {
+        "date": "2026-09-30",
+        "price": 859.95
+      },
+      {
+        "date": "2026-10-01",
+        "price": 869.29
+      },
+      {
+        "date": "2026-10-02",
+        "price": 835.51
+      },
+      {
+        "date": "2026-10-03",
+        "price": 814.79
+      },
+      {
+        "date": "2026-10-04",
+        "price": 796.39
+      },
+      {
+        "date": "2026-10-05",
+        "price": 759.72
+      },
+      {
+        "date": "2026-10-06",
+        "price": 741.66
+      },
+      {
+        "date": "2026-10-07",
+        "price": 767.22
+      },
+      {
+        "date": "2026-10-08",
+        "price": 753.52
+      },
+      {
+        "date": "2026-10-09",
+        "price": 779.19
+      },
+      {
+        "date": "2026-10-10",
+        "price": 759.4
+      },
+      {
+        "date": "2026-10-11",
+        "price": 797.47
+      },
+      {
+        "date": "2026-10-12",
+        "price": 793.42
+      },
+      {
+        "date": "2026-10-13",
+        "price": 798.1
+      },
+      {
+        "date": "2026-10-14",
+        "price": 813.19
+      },
+      {
+        "date": "2026-10-15",
+        "price": 812.3
+      }
+    ]
+  },
+  {
+    "symbol": "TITAN",
+    "name": "Titan Company Ltd",
+    "exchange": "NSE",
+    "sector": "Consumer Goods",
+    "currentPrice": 3450,
+    "previousClose": 3480,
+    "change": -30,
+    "changePercent": -0.86,
+    "marketCapCr": 306300,
+    "peRatio": 84.5,
+    "pbRatio": 23.5,
+    "divYield": 0.32,
+    "fiftyTwoWeekHigh": 3886.95,
+    "fiftyTwoWeekLow": 3055.65,
+    "beta": 0.89,
+    "riskLevel": "GROWTH",
+    "description": "Tata Group's crown lifestyle jewel, dominating organized Indian jewelry retail under the iconic Tanishq brand alongside watches, eyewear, and fragrances.",
+    "selectionRationale": "Capturing the generational formalization of India's $80B jewelry market, powered by brand trust, hallmarking standards, and wedding season resilience.",
+    "keyRisks": [
+      "High customs duty fluctuations on gold imports",
+      "Gold price spike suppressing purchase volumes",
+      "High valuation multiples pricing in perfection"
+    ],
+    "history": [
+      {
+        "date": "2026-09-16",
+        "price": 3266.68
+      },
+      {
+        "date": "2026-09-17",
+        "price": 3344.94
+      },
+      {
+        "date": "2026-09-18",
+        "price": 3422.75
+      },
+      {
+        "date": "2026-09-19",
+        "price": 3260.67
+      },
+      {
+        "date": "2026-09-20",
+        "price": 3195.27
+      },
+      {
+        "date": "2026-09-21",
+        "price": 3168.52
+      },
+      {
+        "date": "2026-09-22",
+        "price": 3119.48
+      },
+      {
+        "date": "2026-09-23",
+        "price": 3213.07
+      },
+      {
+        "date": "2026-09-24",
+        "price": 3253.23
+      },
+      {
+        "date": "2026-09-25",
+        "price": 3174.66
+      },
+      {
+        "date": "2026-09-26",
+        "price": 3290.91
+      },
+      {
+        "date": "2026-09-27",
+        "price": 3228.16
+      },
+      {
+        "date": "2026-09-28",
+        "price": 3355.34
+      },
+      {
+        "date": "2026-09-29",
+        "price": 3449.89
+      },
+      {
+        "date": "2026-09-30",
+        "price": 3423.92
+      },
+      {
+        "date": "2026-10-01",
+        "price": 3495.25
+      },
+      {
+        "date": "2026-10-02",
+        "price": 3573.31
+      },
+      {
+        "date": "2026-10-03",
+        "price": 3502.23
+      },
+      {
+        "date": "2026-10-04",
+        "price": 3381.91
+      },
+      {
+        "date": "2026-10-05",
+        "price": 3402.05
+      },
+      {
+        "date": "2026-10-06",
+        "price": 3493.09
+      },
+      {
+        "date": "2026-10-07",
+        "price": 3415.33
+      },
+      {
+        "date": "2026-10-08",
+        "price": 3302.31
+      },
+      {
+        "date": "2026-10-09",
+        "price": 3269.85
+      },
+      {
+        "date": "2026-10-10",
+        "price": 3414.86
+      },
+      {
+        "date": "2026-10-11",
+        "price": 3473.28
+      },
+      {
+        "date": "2026-10-12",
+        "price": 3518.46
+      },
+      {
+        "date": "2026-10-13",
+        "price": 3447.69
+      },
+      {
+        "date": "2026-10-14",
+        "price": 3423.63
+      },
+      {
+        "date": "2026-10-15",
+        "price": 3450
+      }
+    ]
+  },
+  {
+    "symbol": "ASIANPAINT",
+    "name": "Asian Paints Ltd",
+    "exchange": "NSE",
+    "sector": "Consumer Goods",
+    "currentPrice": 2880,
+    "previousClose": 2855,
+    "change": 25,
+    "changePercent": 0.88,
+    "marketCapCr": 276200,
+    "peRatio": 51,
+    "pbRatio": 14.8,
+    "divYield": 1.15,
+    "fiftyTwoWeekHigh": 3422,
+    "fiftyTwoWeekLow": 2670,
+    "beta": 0.7,
+    "riskLevel": "CONSERVATIVE",
+    "description": "Market leader in decorative architectural paints for over 50 years, controlling more than 50% of the domestic market through an proprietary supply chain.",
+    "selectionRationale": "Unassailable direct-to-dealer tinting machine network, steady repainting demand cycles, and strong pricing power.",
+    "keyRisks": [
+      "Aggressive entry of Grasim (Birla Opus) into decorative paints",
+      "Crude derivative input cost volatility (monomers, titanium dioxide)",
+      "Housing construction slow-down"
+    ],
+    "history": [
+      {
+        "date": "2026-09-16",
+        "price": 2426.35
+      },
+      {
+        "date": "2026-09-17",
+        "price": 2367.45
+      },
+      {
+        "date": "2026-09-18",
+        "price": 2353.01
+      },
+      {
+        "date": "2026-09-19",
+        "price": 2331.12
+      },
+      {
+        "date": "2026-09-20",
+        "price": 2345.94
+      },
+      {
+        "date": "2026-09-21",
+        "price": 2325.96
+      },
+      {
+        "date": "2026-09-22",
+        "price": 2325.01
+      },
+      {
+        "date": "2026-09-23",
+        "price": 2356.83
+      },
+      {
+        "date": "2026-09-24",
+        "price": 2404.87
+      },
+      {
+        "date": "2026-09-25",
+        "price": 2413.92
+      },
+      {
+        "date": "2026-09-26",
+        "price": 2465.67
+      },
+      {
+        "date": "2026-09-27",
+        "price": 2490.04
+      },
+      {
+        "date": "2026-09-28",
+        "price": 2501.52
+      },
+      {
+        "date": "2026-09-29",
+        "price": 2537.02
+      },
+      {
+        "date": "2026-09-30",
+        "price": 2602.71
+      },
+      {
+        "date": "2026-10-01",
+        "price": 2587.47
+      },
+      {
+        "date": "2026-10-02",
+        "price": 2575.24
+      },
+      {
+        "date": "2026-10-03",
+        "price": 2603.36
+      },
+      {
+        "date": "2026-10-04",
+        "price": 2559.44
+      },
+      {
+        "date": "2026-10-05",
+        "price": 2539.46
+      },
+      {
+        "date": "2026-10-06",
+        "price": 2503.48
+      },
+      {
+        "date": "2026-10-07",
+        "price": 2459.85
+      },
+      {
+        "date": "2026-10-08",
+        "price": 2518.3
+      },
+      {
+        "date": "2026-10-09",
+        "price": 2514.25
+      },
+      {
+        "date": "2026-10-10",
+        "price": 2602.73
+      },
+      {
+        "date": "2026-10-11",
+        "price": 2634.46
+      },
+      {
+        "date": "2026-10-12",
+        "price": 2631.51
+      },
+      {
+        "date": "2026-10-13",
+        "price": 2740.39
+      },
+      {
+        "date": "2026-10-14",
+        "price": 2825.97
+      },
+      {
+        "date": "2026-10-15",
+        "price": 2880
+      }
+    ]
+  },
+  {
+    "symbol": "NTPC",
+    "name": "NTPC Ltd",
+    "exchange": "NSE",
+    "sector": "Energy & Utilities",
+    "currentPrice": 418.5,
+    "previousClose": 412,
+    "change": 6.5,
+    "changePercent": 1.58,
+    "marketCapCr": 405800,
+    "peRatio": 19.8,
+    "pbRatio": 2.3,
+    "divYield": 1.85,
+    "fiftyTwoWeekHigh": 448.45,
+    "fiftyTwoWeekLow": 232,
+    "beta": 0.88,
+    "riskLevel": "CONSERVATIVE",
+    "description": "India's premier power generation utility producing over 25% of the country's electricity, with rapid strategic expansion into solar, wind, and green hydrogen.",
+    "selectionRationale": "Regulated return-on-equity model guarantees cash generation regardless of market cycles, paired with an upcoming green energy subsidiary value unlock.",
+    "keyRisks": [
+      "Receivable delays from stressed state electricity distribution companies (DISCOMs)",
+      "Thermal coal logistics bottlenecks",
+      "High capex in renewable asset buildout"
+    ],
+    "history": [
+      {
+        "date": "2026-09-16",
+        "price": 346.01
+      },
+      {
+        "date": "2026-09-17",
+        "price": 341.66
+      },
+      {
+        "date": "2026-09-18",
+        "price": 331.07
+      },
+      {
+        "date": "2026-09-19",
+        "price": 330.98
+      },
+      {
+        "date": "2026-09-20",
+        "price": 321.38
+      },
+      {
+        "date": "2026-09-21",
+        "price": 318.36
+      },
+      {
+        "date": "2026-09-22",
+        "price": 311.43
+      },
+      {
+        "date": "2026-09-23",
+        "price": 312.7
+      },
+      {
+        "date": "2026-09-24",
+        "price": 322.34
+      },
+      {
+        "date": "2026-09-25",
+        "price": 334.4
+      },
+      {
+        "date": "2026-09-26",
+        "price": 339.46
+      },
+      {
+        "date": "2026-09-27",
+        "price": 338.52
+      },
+      {
+        "date": "2026-09-28",
+        "price": 351.14
+      },
+      {
+        "date": "2026-09-29",
+        "price": 363.12
+      },
+      {
+        "date": "2026-09-30",
+        "price": 366.94
+      },
+      {
+        "date": "2026-10-01",
+        "price": 373.51
+      },
+      {
+        "date": "2026-10-02",
+        "price": 376.92
+      },
+      {
+        "date": "2026-10-03",
+        "price": 378.19
+      },
+      {
+        "date": "2026-10-04",
+        "price": 368.69
+      },
+      {
+        "date": "2026-10-05",
+        "price": 365.63
+      },
+      {
+        "date": "2026-10-06",
+        "price": 355.14
+      },
+      {
+        "date": "2026-10-07",
+        "price": 363.31
+      },
+      {
+        "date": "2026-10-08",
+        "price": 364.46
+      },
+      {
+        "date": "2026-10-09",
+        "price": 372.66
+      },
+      {
+        "date": "2026-10-10",
+        "price": 381.97
+      },
+      {
+        "date": "2026-10-11",
+        "price": 389.05
+      },
+      {
+        "date": "2026-10-12",
+        "price": 398.51
+      },
+      {
+        "date": "2026-10-13",
+        "price": 413.75
+      },
+      {
+        "date": "2026-10-14",
+        "price": 410.74
+      },
+      {
+        "date": "2026-10-15",
+        "price": 418.5
+      }
+    ]
+  },
+  {
+    "symbol": "CIPLA",
+    "name": "Cipla Ltd",
+    "exchange": "NSE",
+    "sector": "Healthcare & Pharma",
+    "currentPrice": 1590,
+    "previousClose": 1572,
+    "change": 18,
+    "changePercent": 1.15,
+    "marketCapCr": 128300,
+    "peRatio": 28.2,
+    "pbRatio": 4.3,
+    "divYield": 0.82,
+    "fiftyTwoWeekHigh": 1680,
+    "fiftyTwoWeekLow": 1132,
+    "beta": 0.58,
+    "riskLevel": "BALANCED",
+    "description": "Trusted healthcare stalwart with global authority in respiratory therapies, domestic chronic prescription medications, and consumer health wellness brands.",
+    "selectionRationale": "Leader in inhalers and complex generics globally, boasting durable domestic brand equity and expanding margins in US respiratory products.",
+    "keyRisks": [
+      "US FDA regulatory scrutiny at Goa or Pithampur facilities",
+      "Domestic National List of Essential Medicines (NLEM) price caps",
+      "Raw material API supply disruptions"
+    ],
+    "history": [
+      {
+        "date": "2026-09-16",
+        "price": 1357.35
+      },
+      {
+        "date": "2026-09-17",
+        "price": 1345.91
+      },
+      {
+        "date": "2026-09-18",
+        "price": 1353.82
+      },
+      {
+        "date": "2026-09-19",
+        "price": 1345.49
+      },
+      {
+        "date": "2026-09-20",
+        "price": 1301.89
+      },
+      {
+        "date": "2026-09-21",
+        "price": 1309.51
+      },
+      {
+        "date": "2026-09-22",
+        "price": 1309.01
+      },
+      {
+        "date": "2026-09-23",
+        "price": 1308.6
+      },
+      {
+        "date": "2026-09-24",
+        "price": 1294.67
+      },
+      {
+        "date": "2026-09-25",
+        "price": 1302.36
+      },
+      {
+        "date": "2026-09-26",
+        "price": 1296.67
+      },
+      {
+        "date": "2026-09-27",
+        "price": 1315.4
+      },
+      {
+        "date": "2026-09-28",
+        "price": 1347.99
+      },
+      {
+        "date": "2026-09-29",
+        "price": 1368.32
+      },
+      {
+        "date": "2026-09-30",
+        "price": 1386.26
+      },
+      {
+        "date": "2026-10-01",
+        "price": 1398.81
+      },
+      {
+        "date": "2026-10-02",
+        "price": 1361.81
+      },
+      {
+        "date": "2026-10-03",
+        "price": 1374.02
+      },
+      {
+        "date": "2026-10-04",
+        "price": 1372.43
+      },
+      {
+        "date": "2026-10-05",
+        "price": 1385.08
+      },
+      {
+        "date": "2026-10-06",
+        "price": 1366.63
+      },
+      {
+        "date": "2026-10-07",
+        "price": 1386.99
+      },
+      {
+        "date": "2026-10-08",
+        "price": 1394.94
+      },
+      {
+        "date": "2026-10-09",
+        "price": 1383.42
+      },
+      {
+        "date": "2026-10-10",
+        "price": 1403
+      },
+      {
+        "date": "2026-10-11",
+        "price": 1446.62
+      },
+      {
+        "date": "2026-10-12",
+        "price": 1459.83
+      },
+      {
+        "date": "2026-10-13",
+        "price": 1515.9
+      },
+      {
+        "date": "2026-10-14",
+        "price": 1553.16
+      },
+      {
+        "date": "2026-10-15",
+        "price": 1590
+      }
+    ]
+  },
+  {
+    "symbol": "MARUTI",
+    "name": "Maruti Suzuki India Ltd",
+    "exchange": "NSE",
+    "sector": "Automobile",
+    "currentPrice": 12450,
+    "previousClose": 12380,
+    "change": 70,
+    "changePercent": 0.57,
+    "marketCapCr": 391200,
+    "peRatio": 27.5,
+    "pbRatio": 4.2,
+    "divYield": 1,
+    "fiftyTwoWeekHigh": 13680,
+    "fiftyTwoWeekLow": 9950,
+    "beta": 0.92,
+    "riskLevel": "BALANCED",
+    "description": "India's passenger vehicle titan commanding over 40% market share, with unchallenged dominance in compact cars, strong hybrid SUVs, and CNG options.",
+    "selectionRationale": "Unmatched service network spanning every pin-code in India, leadership in CNG/hybrid powertrain transition, and rising export volumes.",
+    "keyRisks": [
+      "Slow consumer migration back to entry-level small cars",
+      "Delayed pure EV lineup rollout compared to peers",
+      "Yen-Rupee exchange rate fluctuations"
+    ],
+    "history": [
+      {
+        "date": "2026-09-16",
+        "price": 12467.51
+      },
+      {
+        "date": "2026-09-17",
+        "price": 12084.83
+      },
+      {
+        "date": "2026-09-18",
+        "price": 12045.15
+      },
+      {
+        "date": "2026-09-19",
+        "price": 11855.6
+      },
+      {
+        "date": "2026-09-20",
+        "price": 11726.67
+      },
+      {
+        "date": "2026-09-21",
+        "price": 11380.72
+      },
+      {
+        "date": "2026-09-22",
+        "price": 11423.61
+      },
+      {
+        "date": "2026-09-23",
+        "price": 11461.93
+      },
+      {
+        "date": "2026-09-24",
+        "price": 11525.67
+      },
+      {
+        "date": "2026-09-25",
+        "price": 11796.37
+      },
+      {
+        "date": "2026-09-26",
+        "price": 11742.6
+      },
+      {
+        "date": "2026-09-27",
+        "price": 12105.75
+      },
+      {
+        "date": "2026-09-28",
+        "price": 11904.71
+      },
+      {
+        "date": "2026-09-29",
+        "price": 11925.19
+      },
+      {
+        "date": "2026-09-30",
+        "price": 12124.62
+      },
+      {
+        "date": "2026-10-01",
+        "price": 12181.75
+      },
+      {
+        "date": "2026-10-02",
+        "price": 11925.3
+      },
+      {
+        "date": "2026-10-03",
+        "price": 11849
+      },
+      {
+        "date": "2026-10-04",
+        "price": 11873
+      },
+      {
+        "date": "2026-10-05",
+        "price": 11770.61
+      },
+      {
+        "date": "2026-10-06",
+        "price": 11694.37
+      },
+      {
+        "date": "2026-10-07",
+        "price": 11985.85
+      },
+      {
+        "date": "2026-10-08",
+        "price": 12310.34
+      },
+      {
+        "date": "2026-10-09",
+        "price": 12245.39
+      },
+      {
+        "date": "2026-10-10",
+        "price": 12270.45
+      },
+      {
+        "date": "2026-10-11",
+        "price": 12141.85
+      },
+      {
+        "date": "2026-10-12",
+        "price": 12619.27
+      },
+      {
+        "date": "2026-10-13",
+        "price": 12567.15
+      },
+      {
+        "date": "2026-10-14",
+        "price": 12716.53
+      },
+      {
+        "date": "2026-10-15",
+        "price": 12450
+      }
+    ]
+  },
+  {
+    "symbol": "ULTRACEMCO",
+    "name": "UltraTech Cement Ltd",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "currentPrice": 11150,
+    "previousClose": 11020,
+    "change": 130,
+    "changePercent": 1.18,
+    "marketCapCr": 321800,
+    "peRatio": 43.8,
+    "pbRatio": 4.8,
+    "divYield": 0.63,
+    "fiftyTwoWeekHigh": 12030,
+    "fiftyTwoWeekLow": 7950,
+    "beta": 1.05,
+    "riskLevel": "BALANCED",
+    "description": "The 3rd largest cement producer globally outside China and the undisputed Indian leader with over 150 MTPA installed capacity across the country.",
+    "selectionRationale": "Core proxy for India's physical buildout across highways, airports, urban housing, and industrial warehousing.",
+    "keyRisks": [
+      "Petcoke and imported coal fuel price spikes",
+      "Regional pricing wars triggered by capacity additions",
+      "Monsoon seasonal construction slowdowns"
+    ],
+    "history": [
+      {
+        "date": "2026-09-16",
+        "price": 9495.2
+      },
+      {
+        "date": "2026-09-17",
+        "price": 9385.36
+      },
+      {
+        "date": "2026-09-18",
+        "price": 8981.16
+      },
+      {
+        "date": "2026-09-19",
+        "price": 8898.48
+      },
+      {
+        "date": "2026-09-20",
+        "price": 8969.16
+      },
+      {
+        "date": "2026-09-21",
+        "price": 9199
+      },
+      {
+        "date": "2026-09-22",
+        "price": 9275.16
+      },
+      {
+        "date": "2026-09-23",
+        "price": 9646.35
+      },
+      {
+        "date": "2026-09-24",
+        "price": 9831.2
+      },
+      {
+        "date": "2026-09-25",
+        "price": 9904.23
+      },
+      {
+        "date": "2026-09-26",
+        "price": 10228.82
+      },
+      {
+        "date": "2026-09-27",
+        "price": 10051.05
+      },
+      {
+        "date": "2026-09-28",
+        "price": 10291.95
+      },
+      {
+        "date": "2026-09-29",
+        "price": 10394.65
+      },
+      {
+        "date": "2026-09-30",
+        "price": 10618.63
+      },
+      {
+        "date": "2026-10-01",
+        "price": 10501.94
+      },
+      {
+        "date": "2026-10-02",
+        "price": 10726.04
+      },
+      {
+        "date": "2026-10-03",
+        "price": 10384.92
+      },
+      {
+        "date": "2026-10-04",
+        "price": 10610.73
+      },
+      {
+        "date": "2026-10-05",
+        "price": 10344.2
+      },
+      {
+        "date": "2026-10-06",
+        "price": 10138.45
+      },
+      {
+        "date": "2026-10-07",
+        "price": 10104.32
+      },
+      {
+        "date": "2026-10-08",
+        "price": 9883.26
+      },
+      {
+        "date": "2026-10-09",
+        "price": 9871.67
+      },
+      {
+        "date": "2026-10-10",
+        "price": 9687.94
+      },
+      {
+        "date": "2026-10-11",
+        "price": 10054.86
+      },
+      {
+        "date": "2026-10-12",
+        "price": 10548.66
+      },
+      {
+        "date": "2026-10-13",
+        "price": 10714.34
+      },
+      {
+        "date": "2026-10-14",
+        "price": 10823.83
+      },
+      {
+        "date": "2026-10-15",
+        "price": 11150
+      }
+    ]
+  },
+  {
+    "symbol": "HCLTECH",
+    "name": "HCL Technologies Ltd",
+    "exchange": "NSE",
+    "sector": "Technology",
+    "currentPrice": 1780,
+    "previousClose": 1765,
+    "change": 15,
+    "changePercent": 0.85,
+    "marketCapCr": 483000,
+    "peRatio": 28.6,
+    "pbRatio": 6.9,
+    "divYield": 2.92,
+    "fiftyTwoWeekHigh": 1860,
+    "fiftyTwoWeekLow": 1210,
+    "beta": 0.78,
+    "riskLevel": "CONSERVATIVE",
+    "description": "Global technology leader distinguished by strength in digital engineering, hybrid cloud infrastructure management, and proprietary software products.",
+    "selectionRationale": "Market-leading dividend yield approaching 3%, steady infrastructure management services renewal rates, and robust engineering R&D growth.",
+    "keyRisks": [
+      "Product business license renewal lumpiness",
+      "US banking vertical slowdown",
+      "Wage inflation for high-end AI and cloud engineers"
+    ],
+    "history": [
+      {
+        "date": "2026-09-16",
+        "price": 1884.38
+      },
+      {
+        "date": "2026-09-17",
+        "price": 1822.78
+      },
+      {
+        "date": "2026-09-18",
+        "price": 1791.52
+      },
+      {
+        "date": "2026-09-19",
+        "price": 1804.47
+      },
+      {
+        "date": "2026-09-20",
+        "price": 1789.33
+      },
+      {
+        "date": "2026-09-21",
+        "price": 1767.88
+      },
+      {
+        "date": "2026-09-22",
+        "price": 1723.22
+      },
+      {
+        "date": "2026-09-23",
+        "price": 1758.73
+      },
+      {
+        "date": "2026-09-24",
+        "price": 1791.03
+      },
+      {
+        "date": "2026-09-25",
+        "price": 1777.82
+      },
+      {
+        "date": "2026-09-26",
+        "price": 1807.72
+      },
+      {
+        "date": "2026-09-27",
+        "price": 1865.65
+      },
+      {
+        "date": "2026-09-28",
+        "price": 1907.85
+      },
+      {
+        "date": "2026-09-29",
+        "price": 1949.38
+      },
+      {
+        "date": "2026-09-30",
+        "price": 1953.21
+      },
+      {
+        "date": "2026-10-01",
+        "price": 1901.36
+      },
+      {
+        "date": "2026-10-02",
+        "price": 1866.28
+      },
+      {
+        "date": "2026-10-03",
+        "price": 1828.78
+      },
+      {
+        "date": "2026-10-04",
+        "price": 1811.84
+      },
+      {
+        "date": "2026-10-05",
+        "price": 1811.9
+      },
+      {
+        "date": "2026-10-06",
+        "price": 1787.65
+      },
+      {
+        "date": "2026-10-07",
+        "price": 1809.55
+      },
+      {
+        "date": "2026-10-08",
+        "price": 1766.11
+      },
+      {
+        "date": "2026-10-09",
+        "price": 1787.08
+      },
+      {
+        "date": "2026-10-10",
+        "price": 1777.65
+      },
+      {
+        "date": "2026-10-11",
+        "price": 1796.12
+      },
+      {
+        "date": "2026-10-12",
+        "price": 1790.19
+      },
+      {
+        "date": "2026-10-13",
+        "price": 1809.8
+      },
+      {
+        "date": "2026-10-14",
+        "price": 1787.34
+      },
+      {
+        "date": "2026-10-15",
+        "price": 1780
+      }
+    ]
+  }
+]

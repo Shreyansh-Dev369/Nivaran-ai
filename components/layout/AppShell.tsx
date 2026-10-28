@@ -38,15 +38,21 @@ export function AppShell({ children }: AppShellProps) {
         <div className="flex items-center gap-2 truncate">
           <span className="h-1.5 w-1.5 rounded-full bg-[#00E599] animate-pulse shrink-0"></span>
           <span className="truncate">
-            NIVARA Academic Evaluation Engine • Simulated Indian Equities & Cash Ledger
+            NIVARAN Academic Evaluation Engine • Simulated Indian Equities & Cash Ledger
           </span>
         </div>
-        <Link
-          href="/safety"
-          className="text-[#00E599] hover:underline underline-offset-2 shrink-0 ml-3 hidden sm:inline font-semibold"
-        >
-          Demo Disclosures
-        </Link>
+        <div className="flex items-center gap-3 shrink-0 ml-3">
+          <span className="hidden md:inline-flex items-center gap-1.5 text-[10px] font-mono text-[#00E599] bg-[#14352A] px-2 py-0.5 rounded-md">
+            <span className="h-1 w-1 rounded-full bg-[#00E599]"></span>
+            FastAPI + PostgreSQL / SQLite Persistent
+          </span>
+          <Link
+            href="/safety"
+            className="text-[#00E599] hover:underline underline-offset-2 shrink-0 hidden sm:inline font-semibold"
+          >
+            Demo Disclosures
+          </Link>
+        </div>
       </div>
 
       <div className="flex flex-1 min-h-[calc(100vh-32px)] min-w-0">

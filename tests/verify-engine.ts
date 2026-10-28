@@ -7,7 +7,7 @@ import {
 } from "../lib/utils/simulation-engine";
 import { Holding } from "../lib/types";
 
-console.log("=== NIVARA AUTOMATED TEST SUITE ===");
+console.log("=== NIVARAN AUTOMATED TEST SUITE ===");
 
 // 1. Currency Formatters Tests
 console.log("\n[Test 1] Financial Currency Formatters:");

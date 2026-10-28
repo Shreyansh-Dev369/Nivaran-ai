@@ -21,13 +21,13 @@ export default function InvestmentApproachPage() {
     {
       index: "01",
       title: "Hard Single-Stock Concentration Caps",
-      desc: "Even established blue-chip giants can face prolonged stagnation or sector-specific headwinds. NIVARA enforces strict single-stock ceilings (typically 20% to 25%), preventing catastrophic single-company drawdown.",
+      desc: "Even established blue-chip giants can face prolonged stagnation or sector-specific headwinds. NIVARAN enforces strict single-stock ceilings (typically 20% to 25%), preventing catastrophic single-company drawdown.",
       tag: "CONCENTRATION RISK",
     },
     {
       index: "02",
       title: "Cross-Sector Economic Calibration",
-      desc: "Economic cycles rotate: IT services thrive during enterprise tech transformations, banking captures domestic credit demand, and FMCG supplies steady dividend income. NIVARA distributes allocations across at least 3 to 5 core industries.",
+      desc: "Economic cycles rotate: IT services thrive during enterprise tech transformations, banking captures domestic credit demand, and FMCG supplies steady dividend income. NIVARAN distributes allocations across at least 3 to 5 core industries.",
       tag: "CYCLICAL PROTECTION",
     },
     {
@@ -39,7 +39,7 @@ export default function InvestmentApproachPage() {
     {
       index: "04",
       title: "Threshold-Driven Rebalancing Governance",
-      desc: "Rather than initiating arbitrary calendar trades that rack up friction costs, NIVARA utilizes a disciplined ±5% drift threshold. Simulated trades are only proposed when market movement meaningfully skews intended risk parameters.",
+      desc: "Rather than initiating arbitrary calendar trades that rack up friction costs, NIVARAN utilizes a disciplined ±5% drift threshold. Simulated trades are only proposed when market movement meaningfully skews intended risk parameters.",
       tag: "DRIFT THRESHOLD",
     },
   ];

@@ -719,7 +719,7 @@ export default function CreatePlanPage() {
 
             {/* Disclaimer */}
             <div className="border border-hairline bg-paper-subtle p-4 text-[11px] font-mono text-ink-600 leading-relaxed">
-              <strong>Academic Educational Disclosure:</strong> Selection scores are computed deterministically from simulated balance-sheet metrics. NIVARA does not guarantee investment returns or provide certified SEBI financial advice.
+              <strong>Academic Educational Disclosure:</strong> Selection scores are computed deterministically from simulated balance-sheet metrics. NIVARAN does not guarantee investment returns or provide certified SEBI financial advice.
             </div>
 
             {/* Navigation */}
@@ -835,7 +835,7 @@ export default function CreatePlanPage() {
                   <span className="font-semibold block font-mono text-[11px] uppercase tracking-wider text-ink-950 mb-0.5">
                     Explicit Confirmation Required
                   </span>
-                  I confirm that I have reviewed the proposed stock allocations, concentration caps, and risk disclosures. I understand that NIVARA is an educational simulation platform operating with zero real capital transfers.
+                  I confirm that I have reviewed the proposed stock allocations, concentration caps, and risk disclosures. I understand that NIVARAN is an educational simulation platform operating with zero real capital transfers.
                 </div>
               </label>
             </div>

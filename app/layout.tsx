@@ -23,7 +23,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NIVARA | Automated Indian Stock Investing",
+  title: "NIVARAN | Automated Indian Stock Investing",
   description:
     "A preference-based, rules-driven investment platform for Indian equities. Discipline over speculation.",
 };

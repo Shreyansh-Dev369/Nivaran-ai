@@ -204,7 +204,7 @@ export default function SignUpPage() {
                   className="h-3.5 w-3.5 rounded-none border-hairline text-pine-900 mt-0.5"
                 />
                 <span className="text-[11px] text-ink-600 leading-snug">
-                  I understand that NIVARA is an academic software demonstration operating with simulated demo capital, sample Indian market approximations, and zero real money execution.
+                  I understand that NIVARAN is an academic software demonstration operating with simulated demo capital, sample Indian market approximations, and zero real money execution.
                 </span>
               </label>
             </div>

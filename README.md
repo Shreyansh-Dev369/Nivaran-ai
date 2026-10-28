@@ -1,165 +1,282 @@
-# NIVARA — Automated Indian Stock Investing Platform
+# NIVARAN — Full-Stack Educational Investment Simulation Platform
 
 > **"Invest with a plan. Understand every decision. Track your progress."**
 
-NIVARA is a premium, preference-based automated stock-investing web application built for ordinary people in India who want to build long-term wealth in equities (NSE/BSE) without the complexity, stress, and noise of manual day-trading.
+NIVARAN is an educational, full-stack, rule-based investment simulation and portfolio management web application designed for live college and university evaluations. It demonstrates how user preference ingestion, quantitative risk profiling, deterministic allocation algorithms, simulated cash ledgers, and portfolio analytics function together within a modern software architecture.
 
 ---
 
-## 1. Academic & College Demonstration Disclaimer
+## 1. Academic & University Evaluation Disclaimer
 
-**THIS PLATFORM IS AN EDUCATIONAL DEMONSTRATION BUILT FOR ACADEMIC EVALUATION.**
-- **No Real Capital:** All portfolio values, cash balances, and investment amounts operate within a local, simulated ledger. Zero real deposits, bank transfers, or withdrawals are accepted.
-- **No Brokerage Execution:** No real stock purchase or sale orders are placed or routed to the National Stock Exchange of India (NSE) or the Bombay Stock Exchange (BSE).
-- **Illustrative Market Data:** Stock symbols (Reliance, TCS, HDFC Bank, Infosys, LT, etc.), prices, and fundamentals are realistic sample approximations.
-- **Not SEBI Registered:** NIVARA does not provide certified financial advice and is not registered with the Securities and Exchange Board of India (SEBI).
+**THIS PLATFORM IS STRICTLY AN EDUCATIONAL SIMULATION DESIGNED FOR ACADEMIC EVALUATION.**
+- **No Real Capital:** All portfolio valuations, virtual deposits, and ledger accounts operate within a simulated ledger. Zero real deposits, bank transfers, or withdrawals are permitted or executed.
+- **No Brokerage Order Routing:** No real orders are routed to the National Stock Exchange of India (NSE) or the Bombay Stock Exchange (BSE).
+- **Simulated Market Dataset:** Security tickers (Reliance, TCS, HDFC Bank, Infosys, LT, etc.), financial ratios, Beta values, and historical time-series are deterministic demonstration datasets.
+- **Not SEBI Registered:** NIVARAN does not provide registered investment advisory services and is not affiliated with the Securities and Exchange Board of India (SEBI).
 
 ---
 
-## 2. Implemented Features & Capabilities
+## 2. Full-Stack System Architecture
 
-### Public Experience
-- **Brand Identity & Landing Page (`/`):** Conversion-focused homepage detailing the product promise, problem with investing alone, 3-step workflow, interactive sample allocation preview, explainable investing pillars, FAQs, and demo disclosures.
-- **How It Works (`/how-it-works`):** Comprehensive breakdown of preference ingestion, deterministic MPT-based allocation, simulated automated contributions, and rebalancing drift control.
-- **Investment Philosophy (`/investment-approach`):** Four pillars of the NIVARA engine (single-stock caps, sector diversification, beta/volatility scoring, threshold rebalancing) and beginner glossary.
-- **Safety & Disclosures (`/safety`):** Transparent explanation of demo boundaries, privacy, and non-negotiable simulation rules.
-- **Authentication Flows (`/login`, `/signup`, `/forgot-password`):** Complete demo authentication with validation, password reveal toggles, and a **"Quick Demo Evaluation Login"** button for instant evaluation without typing.
+NIVARAN is architected with a decoupled frontend and modular backend service architecture:
 
-### Authenticated Application
-- **Guided Onboarding Questionnaire (`/onboarding`):** Multi-step questionnaire collecting financial goals, time horizon, risk profile, preferred Indian sectors, contribution amount, and simulated frequency. Displays instant allocation proposal before dashboard transition.
-- **Executive Investor Dashboard (`/dashboard`):** 
-  - Real-time simulated portfolio value, total invested, cash balance, and percentage returns.
-  - Interactive Recharts area chart with timeframe toggles (1M, 3M, 6M, 1Y, ALL).
-  - Active investment plan card with one-click **"Run Demo Contribution"** and Pause/Resume controls.
-  - Asset & sector breakdown donut chart.
-  - Holdings table, ledger activity stream, and goal tracking preview.
-- **Deep Portfolio & Holdings (`/portfolio`):** Full holdings breakdown with actual vs target weighting, individual share quantities, average buy prices, live P&L, sector filter chips, and concentration alerts.
-- **Indian Equities Market Discovery (`/markets`):** Explore 20+ realistic Indian equities across 7 sectors (Technology, Banking & Finance, Energy & Utilities, Healthcare, Consumer Goods, Industrials, Automobile) with live search, NSE/BSE exchange toggle, sector filters, sorting, and one-click watchlist stars.
-- **Stock Detail Pages (`/stocks/[symbol]`):** Dedicated deep-dive for every security featuring historical price charts, sample valuation multiples (P/E, P/B, Dividend Yield, Beta, 52W High/Low), algorithmic selection rationale, and identified risk factors.
-- **Investment Plan Manager (`/investment-plan`):** Inspect active plan parameters, execute automated recurring contributions, simulate one-click rebalancing, pause/resume, or stop plan.
-- **Interactive Plan Creator (`/investment-plan/create`):** Real-time deterministic allocation generator enforcing single-stock concentration caps (&le;25%), sector exclusions, and rebalancing thresholds, guaranteed to sum to exactly 100%.
-- **Simulated Cash Ledger & Funding Modal:** Instant top-up flow with preset quick-picks (₹10,000 to ₹1,00,000), simulated NetBanking/UPI confirmation, and transaction receipts.
-- **Activity & Audit Trail (`/activity`):** Chronological ledger recording all simulated deposits, automated SIPs, rebalance adjustments, and plan events with filterable receipt dialogs.
-- **Portfolio Health & Insights (`/insights`):** Herfindahl-Hirschman Index (HHI) diversification scoring, single-stock and sector exposure checks, plain-language decision explanations, and interactive macroeconomic scenario stress testing.
-- **Financial Goals Tracker (`/goals`):** Goal progress visualizer (Wealth Creation, Retirement Corpus, Emergency Buffer) with monthly contribution projections.
-- **Notifications Center (`/notifications`):** Real-time alerts for plan executions, drift warnings, and market recaps with read/unread filters.
-- **Investor Profile (`/profile`):** Personal details, Tier 1 Demo Verified KYC status, and masked PAN simulation.
-- **Settings & Reset (`/settings`):** Indian currency notation preferences, notification triggers, and a **"Reset All Demo Data"** button to restore initial evaluation state.
+```text
+┌────────────────────────────────────────────────────────┐
+│               Next.js 16 (React 19 + TS)               │
+│  Tailwind CSS v4 • Recharts • App Router • Lucide Icons │
+└───────────────────────────┬────────────────────────────┘
+                            │  HTTP / REST (JWT Bearer Auth)
+                            ▼
+┌────────────────────────────────────────────────────────┐
+│                   FastAPI Backend                      │
+│     Pydantic Schemas • Modular Services • CORS         │
+├────────────────────────────────────────────────────────┤
+│ • Recommendation Engine (Beta / Sector Scoring)        │
+│ • Automatic Virtual Allocation Service (Atomic Tx)     │
+│ • Portfolio Valuation & HHI Diversification Service   │
+│ • Simulated Cash Ledger & Virtual Wallet Service       │
+└───────────────────────────┬────────────────────────────┘
+                            │  SQLAlchemy 2.0 ORM / Alembic
+                            ▼
+┌────────────────────────────────────────────────────────┐
+│               Relational Database Engine               │
+│  Default: SQLite (nivaran.db) for zero-config offline  │
+│  Production: Supabase PostgreSQL (with RLS Policies)   │
+└────────────────────────────────────────────────────────┘
+```
 
 ---
 
 ## 3. Technology Stack
 
+### Frontend
 - **Framework:** Next.js 16.4.1 (App Router with Turbopack)
 - **Language:** TypeScript 5
 - **Library:** React 19.3.0
-- **Styling:** Tailwind CSS v4 (with sophisticated color system: Forest Green `#123e30`, Near-black Charcoal `#121820`, Soft Mint `#ecfdf5`, Warm Canvas `#fbfbfd`)
+- **Styling:** Tailwind CSS v4 (Forest Green `#123e30`, Charcoal `#121820`, Mint `#00E599`)
+- **Visualizations:** Recharts (Portfolio Area Chart, Sector Donut, Historical Stock Trends)
 - **Icons:** Lucide React
-- **Data Visualization:** Recharts
-- **State Layer:** Centralized React Context with persistent `localStorage` synchronization and integer paise / decimal-safe money arithmetic
-- **Testing:** Native Node.js test assertions via `tsx`
+- **API Client:** Centralized fetch-based client (`lib/api.ts`) with Bearer token authentication
+
+### Backend
+- **Framework:** FastAPI 0.141+
+- **ASGI Server:** Uvicorn
+- **Language:** Python 3.10+ (tested on Python 3.14)
+- **Validation:** Pydantic v2 (Pydantic Settings & ConfigDict)
+- **Database ORM:** SQLAlchemy 2.0
+- **Migrations:** Alembic 1.19+
+- **Security:** NIST PBKDF2-HMAC-SHA256 password hashing (100,000 rounds) + PyJWT token encoding/verification
+
+### Database
+- **Primary / Local Demo Mode:** SQLite (`nivaran.db`) for immediate offline demonstration without cloud dependency.
+- **Production Mode:** Supabase PostgreSQL with comprehensive Row-Level Security (RLS) policies provided in `backend/supabase_schema.sql`.
 
 ---
 
-## 4. Project Structure
+## 4. Implemented Features & Endpoints
+
+### Core Features
+1. **Authentication & Identity:** User registration, password verification, secure token issuance, and one-click quick demo login.
+2. **Preference Profiling:** Captures risk tolerance tier (`CONSERVATIVE`, `BALANCED`, `GROWTH`), investment horizon, sector preferences, single-stock caps, and rebalance thresholds.
+3. **Stock Catalogue:** 20 Indian blue-chip equities across 7 sectors with live search, sector filtering, exchange filtering, and risk indicators.
+4. **Deterministic Recommendation Engine:** Rule-based candidate scoring based on Beta volatility, dividend yield, market capitalization, and user sector affinity; normalizes weights to sum to exactly 100%.
+5. **Automatic Virtual Allocation:** Atomic database transaction deducting virtual funds, allocating whole-share quantities, recording cost basis, and logging audit entries.
+6. **Portfolio Holdings & Valuation:** Real-time valuation (`shares × current_price`), cost basis accounting, unrealized P&L, sector weights, and Herfindahl-Hirschman Index (HHI) concentration scoring.
+7. **Simulated Cash Ledger:** Decimal-safe virtual deposits, balance tracking, and immutable transaction history.
+8. **Portfolio Rebalancing:** Evaluates allocation drift against policy thresholds (±5%) and simulates rebalance adjustments.
+
+### Backend API Contract
+
+| Method | Endpoint | Description | Protected |
+| :--- | :--- | :--- | :---: |
+| `GET` | `/health` | System health & database connectivity check | No |
+| `POST` | `/api/auth/register` | Register new evaluator profile | No |
+| `POST` | `/api/auth/login` | Authenticate with email & password | No |
+| `POST` | `/api/auth/demo-login` | Instant evaluator one-click login | No |
+| `GET` | `/api/auth/me` | Retrieve active authenticated session | Yes |
+| `GET` | `/api/profile` | Retrieve user profile information | Yes |
+| `PUT` | `/api/profile` | Update user profile | Yes |
+| `GET` | `/api/preferences` | Retrieve user investment mandate | Yes |
+| `PUT` | `/api/preferences` | Update user investment mandate | Yes |
+| `GET` | `/api/stocks` | Query stock catalogue with filters | No |
+| `GET` | `/api/stocks/{symbol}` | Query single security metrics and history | No |
+| `GET` | `/api/recommendations`| Generate deterministic allocation proposal | Yes |
+| `POST`| `/api/allocations` | Execute automatic virtual funds allocation | Yes |
+| `GET` | `/api/allocations` | Retrieve allocation run audit history | Yes |
+| `GET` | `/api/wallet` | Fetch authoritative virtual wallet balance | Yes |
+| `POST`| `/api/wallet/deposits` | Deposit virtual funds with validation | Yes |
+| `GET` | `/api/portfolio` | Real-time holdings valuation & analytics | Yes |
+| `POST`| `/api/portfolio/rebalance` | Execute simulated drift rebalance | Yes |
+| `GET` | `/api/transactions` | Query chronological transaction ledger | Yes |
+| `POST`| `/api/demo/reset` | Restore baseline demonstration portfolio | No |
+| `POST`| `/api/demo/reset-user` | Reset current user to ₹1,00,000 fresh cash | Yes |
+
+---
+
+## 5. Repository Structure
 
 ```text
-nivaran-ai/
-├── app/
-│   ├── layout.tsx                     # Root HTML & AppProvider wrapper
-│   ├── globals.css                    # Design tokens & Tailwind v4 theme
-│   ├── page.tsx                       # Public conversion homepage
-│   ├── how-it-works/page.tsx          # 4-Step workflow & comparison
-│   ├── investment-approach/page.tsx   # Risk pillars & MPT philosophy
-│   ├── safety/page.tsx                # Demo boundaries & safety disclaimers
-│   ├── login/page.tsx                 # Sign-in with Quick Demo shortcut
-│   ├── signup/page.tsx                # Registration & terms acknowledgement
-│   ├── forgot-password/page.tsx       # Simulated password recovery
-│   ├── onboarding/page.tsx            # Multi-step investor questionnaire
-│   ├── dashboard/page.tsx             # Executive portfolio dashboard
-│   ├── portfolio/page.tsx             # In-depth holdings & weight analysis
-│   ├── markets/page.tsx               # Indian equity explorer (NSE/BSE)
-│   ├── stocks/[symbol]/               # Dynamic stock detail pages
-│   │   ├── page.tsx                   # Static pre-rendering server component
-│   │   └── StockDetailClient.tsx      # Interactive client view
-│   ├── investment-plan/page.tsx       # Plan controls & execution
-│   ├── investment-plan/create/page.tsx# Deterministic plan generator
-│   ├── activity/page.tsx              # Transaction ledger & audit receipts
-│   ├── insights/page.tsx              # HHI diversification & stress tests
-│   ├── goals/page.tsx                 # Financial goal progress tracking
-│   ├── notifications/page.tsx         # Alert center
-│   ├── profile/page.tsx               # Investor tier & profile info
-│   └── settings/page.tsx              # Preferences & demo data reset
-├── components/
-│   ├── layout/
-│   │   ├── AppNavbar.tsx              # Search bar, demo funding, notifications
-│   │   ├── AppSidebar.tsx             # Desktop sidebar with cash ledger card
-│   │   ├── AppShell.tsx               # Authenticated layout & auth guard
-│   │   ├── MobileBottomNav.tsx        # Thumb-friendly mobile navigation
-│   │   ├── PublicHeader.tsx           # Public header with responsive nav
-│   │   └── PublicFooter.tsx           # Public footer with SEBI disclaimers
-│   ├── charts/
-│   │   ├── PortfolioAreaChart.tsx     # Recharts portfolio value trend
-│   │   ├── AllocationDonutChart.tsx   # Sector/stock distribution donut
-│   │   └── StockHistoryChart.tsx      # Individual stock price history chart
-│   ├── modals/
-│   │   ├── AddFundsModal.tsx          # Simulated cash ledger funding
-│   │   └── RebalanceModal.tsx         # Portfolio drift & rebalance executor
-│   └── ui/
-│       └── DemoBadge.tsx              # Persistent demo indicator & modal
-├── context/
-│   └── AppContext.tsx                 # Centralized state & ledger engine
+Nivaran-ai-main/
+├── app/                               # Next.js App Router Pages
+│   ├── layout.tsx                     # Root Layout & AppProvider wrapper
+│   ├── page.tsx                       # Public Landing Page & Pitch
+│   ├── dashboard/page.tsx             # Investor Dashboard & Portfolio Chart
+│   ├── portfolio/page.tsx             # Holdings Table & Concentration Breakdown
+│   ├── markets/page.tsx               # Indian Equities Explorer (NSE/BSE)
+│   ├── stocks/[symbol]/page.tsx       # Dynamic Stock Deep-Dive
+│   ├── investment-plan/page.tsx       # Active Plan Controls & Allocation View
+│   ├── investment-plan/create/page.tsx# Deterministic Allocation Generator
+│   ├── activity/page.tsx              # Transaction Ledger & Audit Receipts
+│   ├── insights/page.tsx              # HHI Diversification & Scenario Tests
+│   ├── onboarding/page.tsx            # Multi-Step Investor Questionnaire
+│   ├── login/page.tsx                 # Sign-In with One-Click Demo Button
+│   ├── signup/page.tsx                # User Registration
+│   ├── settings/page.tsx              # Preferences & Demo Data Reset
+│   └── safety/page.tsx                # Simulation Boundaries & Disclosures
+├── components/                        # Reusable UI & Layout Components
+│   ├── layout/                        # AppShell, AppNavbar, AppSidebar
+│   ├── charts/                        # Area Chart, Donut Chart, History Chart
+│   ├── modals/                        # AddFundsModal, RebalanceModal
+│   └── ui/                            # BrandLogo, Toast, CommandPalette
+├── context/                           # Centralized State & Backend Sync Layer
+│   └── AppContext.tsx                 # AppProvider, Reactive State, Sync Logic
 ├── lib/
-│   ├── types.ts                       # Domain TypeScript interfaces
-│   ├── data/stocks.ts                 # 20+ Indian blue-chip equities
-│   └── utils/
-│       ├── formatters.ts              # INR (₹), percentage, and paise math
-│       └── simulation-engine.ts       # Deterministic MPT allocation & HHI
+│   ├── api.ts                         # Centralized Backend REST API Client
+│   ├── types.ts                       # Domain TypeScript Interfaces
+│   ├── data/stocks.ts                 # 20 Indian Blue-Chip Equities
+│   └── utils/formatters.ts            # INR (₹), Paise Math & Formatters
+├── backend/                           # Python FastAPI Application
+│   ├── alembic/                       # Alembic Database Migrations
+│   │   └── versions/                  # Schema Version Scripts
+│   ├── alembic.ini                    # Alembic Configuration
+│   ├── supabase_schema.sql            # Supabase PostgreSQL DDL & RLS Policies
+│   ├── requirements.txt               # Backend Python Dependencies
+│   ├── app/
+│   │   ├── main.py                    # FastAPI Entry Point & Lifespan
+│   │   ├── core/                      # Settings & Security (JWT, Hash)
+│   │   ├── db/                        # Database Engine, Models, Seed
+│   │   ├── schemas/                   # Pydantic v2 Request/Response Models
+│   │   ├── services/                  # Recommendation, Allocation, Wallet, Portfolio
+│   │   └── api/                       # API Endpoints & Auth Dependencies
+│   └── tests/                         # Pytest Automated Test Suite
+│       ├── test_health.py             # Health Endpoint Tests
+│       ├── test_auth.py               # Auth & Profile Tests
+│       ├── test_wallet.py             # Virtual Deposit Tests
+│       ├── test_recommendations.py    # Recommendation Scoring Tests
+│       ├── test_allocations.py        # Automatic Allocation Tests
+│       ├── test_portfolio.py          # Portfolio Valuation Tests
+│       └── test_security.py           # Cross-User Data Isolation Tests
 └── tests/
-    └── verify-engine.ts               # Automated unit test suite
+    └── verify-engine.ts               # Frontend Simulation Engine Tests
 ```
 
 ---
 
-## 5. How to Run the Application
+## 6. Setup & Execution Instructions
 
 ### Prerequisites
-- Node.js version 20+ (Node.js 24 is installed and verified)
-- npm version 10+
+- **Node.js:** v20+ (Node.js 24 verified)
+- **Python:** v3.10+ (Python 3.14 verified)
+- **npm:** v10+
 
-### Installation & Execution
+### Step 1: Install Dependencies
 ```bash
-# 1. Install dependencies
+# Install frontend npm dependencies
 npm install
 
-# 2. Run automated test suite
-npm test
-
-# 3. Build production bundle (verified 0 errors)
-npm run build
-
-# 4. Start production server
-npm run start
-
-# Alternatively, run development mode:
-npm run dev
+# Install backend python dependencies
+pip install -r backend/requirements.txt
 ```
 
+### Step 2: Seed the Database
+```bash
+npm run seed
+```
+*This initializes `nivaran.db` and populates the 20 Indian equities and default evaluation investor.*
+
+### Step 3: Run the Backend Server
+```bash
+npm run backend
+# Or: python -m uvicorn backend.app.main:app --port 8000 --reload
+```
+The FastAPI backend will start at `http://127.0.0.1:8000`. You can inspect the interactive OpenAPI documentation at `http://127.0.0.1:8000/docs`.
+
+### Step 4: Run the Frontend Application
+In a second terminal window:
+```bash
+npm run dev
+```
 Open [http://localhost:3000](http://localhost:3000) in your web browser.
 
 ---
 
-## 6. Evaluation & Sign-In Instructions
+## 7. Automated Testing Suite
 
-For evaluation panels, teachers, and reviewers:
-1. Navigate to `/login`.
-2. Click the **"Quick Demo Evaluation Login"** card.
-3. This instantly loads the pre-configured investor profile:
-   - **Name:** Arjun Sharma
-   - **Simulated Portfolio Value:** ~₹1,84,515 (+4.8% return)
-   - **Available Demo Cash:** ₹50,000
-   - **Active Plan:** Core Indian Growth Plan (₹25,000 Monthly SIP)
-   - **Holdings:** 5 Blue-Chips (Reliance, TCS, HDFC Bank, Infosys, Larsen & Toubro)
-4. To test automated investing, click **"Run Demo Contribution"** on the Dashboard or Investment Plan page.
-5. To test funding, click **"Add Demo Funds"** in the top navigation or sidebar.
-6. To restore the pristine baseline at any time, go to **Settings & Reset** (`/settings`) and click **"Reset All Demo Data"**.
+NIVARAN includes full test coverage across both frontend math modules and backend API/database services:
+
+```bash
+# Run both Frontend & Backend test suites simultaneously:
+npm run test:all
+
+# Or run separately:
+npm test           # TypeScript engine tests (6/6 tests)
+npm run test:backend # Python pytest suite (21/21 tests)
+```
+
+### Test Coverage Highlights:
+- **Backend Unit Tests:** Decimal-safe arithmetic, deposit validation, single-stock cap enforcement, whole-share calculations, and rounding behavior.
+- **Backend Integration Tests:** Database persistence for allocations, transaction ledger updates, and preference updates.
+- **Security Tests:** Missing and expired Bearer token rejection, malformed payloads, attempted virtual overspending, and strict cross-user data isolation.
+- **Build Checks:** `npm run build` runs clean type-checking across 48 static/hybrid routes with 0 errors.
+
+---
+
+## 8. College & Teacher Demonstration Walkthrough
+
+Follow this step-by-step path to present the complete full-stack workflow to an examiner or teacher:
+
+1. **Landing Page (`/`):**
+   - Showcase the NIVARAN branding, three-step simulated workflow, and explicit academic simulation notices.
+2. **Registration / Quick Demo Login (`/login`):**
+   - Click **"Quick Evaluator Login"** to instantly sign into the pre-seeded investor profile (**Arjun Sharma**).
+   - Alternatively, click **Sign Up** (`/signup`) to register a new user profile with real database persistence.
+3. **Investor Onboarding & Preferences (`/onboarding`):**
+   - Select Risk Tolerance (e.g. *Growth*), Time Horizon, and preferred sectors (e.g. *Technology*, *Banking*, *Consumer Goods*).
+   - Review the instant deterministic allocation proposal before transitioning to the Dashboard.
+4. **Investor Dashboard (`/dashboard`):**
+   - Point out the top context bar displaying `FastAPI + PostgreSQL / SQLite Persistent`.
+   - Inspect portfolio metrics: Simulated Portfolio Value, Total Invested, Available Cash, and Percentage Returns calculated dynamically from holdings.
+5. **Adding Virtual Funds (`/activity` or Header modal):**
+   - Click **"+ Add Demo Funds"** in the top navigation or sidebar.
+   - Select ₹25,000 or ₹50,000 and confirm the simulated top-up.
+   - Verify that the available cash updates immediately and a `DEPOSIT` record appears in the activity ledger.
+6. **Market Discovery & Stock Catalogue (`/markets`):**
+   - Explore the 20 Indian equities across 7 sectors.
+   - Filter by sector (e.g. *Technology*) or search for "Reliance" or "TCS".
+   - Click a stock card to open its dedicated deep-dive page (`/stocks/[symbol]`) featuring 30-day historical charts and valuation multiples.
+7. **Generating Recommendations & Executing Allocation (`/investment-plan/create`):**
+   - Walk through the interactive Plan Creator.
+   - Set an allocation amount (e.g. ₹25,000) and observe the deterministic scoring algorithm rank the candidates.
+   - Enforce concentration caps (&le;25%) and notice how weights sum to exactly 100%.
+   - Click **"Confirm & Deploy Simulated Allocation"**.
+   - Review the generated transaction voucher receipt with unique reference ID.
+8. **Inspecting Portfolio Holdings (`/portfolio`):**
+   - Navigate to the Portfolio page.
+   - Inspect the holdings table showing actual vs. target weights, share counts, average buy prices, and live P&L.
+9. **Portfolio Health & Stress Testing (`/insights`):**
+   - Review the Herfindahl-Hirschman Index (HHI) concentration score and sector allocation distribution.
+   - Test macroeconomic stress-testing scenarios (e.g. *RBI Interest Rate Hike*, *Tech Capex Acceleration*).
+10. **Data Persistence Verification:**
+    - Refresh the browser (`F5`) to confirm that all balances, holdings, and transactions persist from the database.
+    - Sign out (`/settings`) and sign back in to verify persistent session storage.
+11. **Demonstration Reset:**
+    - Navigate to **Settings** (`/settings`) and click **"Reset All Demo Data"** to restore the evaluation baseline.
+
+---
+
+## 9. Security & Isolation Notes
+
+- **Cryptographic User Isolation:** Every private resource (`/api/wallet`, `/api/portfolio`, `/api/allocations`, `/api/transactions`) derives identity exclusively from verified JWT tokens. Client-supplied IDs are never trusted as proof of identity.
+- **Strict Server-Side Validation:** All virtual deposits and allocation amounts are validated server-side. Attempts to allocate more virtual funds than are available in the authoritative database wallet are rejected with HTTP 400 Bad Request.
+- **Transactional Atomicity:** Wallet balance deductions and holding creations execute within a database transaction block that rolls back completely if any sub-operation fails.
+- **Credential Hygiene:** Privileged database credentials and server secret keys remain strictly server-side. No API keys or credentials are leaked to the client bundle.

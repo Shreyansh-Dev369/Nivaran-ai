@@ -48,7 +48,7 @@ export function DemoBadge({ compact = false }: { compact?: boolean }) {
 
             <div className="space-y-3.5 text-xs text-ink-600 leading-relaxed font-sans">
               <p>
-                <strong>NIVARA</strong> is an original software prototype developed for academic demonstration. It models how preference-based rules can automate blue-chip Indian stock investing without requiring manual day-trading.
+                <strong>NIVARAN</strong> is an original software prototype developed for academic demonstration. It models how preference-based rules can automate blue-chip Indian stock investing without requiring manual day-trading.
               </p>
               <div className="border-l-2 border-pine-800 pl-3.5 py-1 text-ink-800 italic font-serif text-sm">
                 &ldquo;Discipline over speculation. Understand every allocation decision.&rdquo;

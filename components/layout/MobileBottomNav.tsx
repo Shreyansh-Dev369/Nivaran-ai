@@ -119,7 +119,7 @@ export function MobileBottomNav() {
             <div className="flex items-center justify-between pb-4 border-b border-[#163628]">
               <div className="flex items-center gap-2">
                 <span className="h-2 w-2 rounded-full bg-[#00E599]"></span>
-                <span className="font-serif text-lg text-white font-medium">NIVARA Platform Suite</span>
+                <span className="font-serif text-lg text-white font-medium">NIVARAN Platform Suite</span>
               </div>
               <button
                 onClick={() => setMoreMenuOpen(false)}

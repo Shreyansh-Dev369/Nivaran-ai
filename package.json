@@ -7,7 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "tsx tests/verify-engine.ts"
+    "test": "tsx tests/verify-engine.ts",
+    "test:backend": "python -m pytest backend/tests/ -v",
+    "test:all": "tsx tests/verify-engine.ts && python -m pytest backend/tests/ -v",
+    "backend": "python -m uvicorn backend.app.main:app --port 8000 --reload",
+    "seed": "python -c \"from backend.app.db.database import init_db, SessionLocal; from backend.app.db.seed import seed_all_stocks, seed_demo_investor; init_db(); db = SessionLocal(); seed_all_stocks(db); seed_demo_investor(db); db.close(); print('Seed complete')\""
   },
   "dependencies": {
     "clsx": "^2.1.1",

@@ -67,7 +67,7 @@ export default function DashboardPage() {
   };
 
   const copyReferralCode = () => {
-    navigator.clipboard?.writeText("NIVARA-ELITE-2026");
+    navigator.clipboard?.writeText("NIVARAN-ELITE-2026");
     setReferralCopied(true);
     showToast({
       title: "Referral Link Copied!",
@@ -346,7 +346,7 @@ export default function DashboardPage() {
             <div className="relative z-10 pt-6 space-y-2">
               <div className="flex items-center gap-2 bg-[#06140F] border border-[#1E4736] rounded-2xl p-1.5 pl-3">
                 <span className="font-mono text-xs font-bold text-[#00E599] select-all">
-                  NIVARA-ELITE-2026
+                  NIVARAN-ELITE-2026
                 </span>
                 <button
                   type="button"
@@ -373,7 +373,7 @@ export default function DashboardPage() {
                   </span>
                   <div className="flex items-center gap-2 mt-0.5">
                     <h3 className="font-serif text-xl text-[#071912] font-semibold">
-                      {plan?.name || "NIVARA Core Balanced Model"}
+                      {plan?.name || "NIVARAN Core Balanced Model"}
                     </h3>
                     <span
                       className={`text-[10px] font-mono uppercase font-bold px-2 py-0.5 rounded-full ${

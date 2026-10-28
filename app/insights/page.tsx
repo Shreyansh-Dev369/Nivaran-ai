@@ -152,7 +152,7 @@ export default function InsightsPage() {
             </h2>
           </div>
           <p className="text-xs sm:text-sm text-[#4B665A] leading-relaxed max-w-3xl">
-            NIVARA is built on explicit, verifiable financial principles rather than opaque black-box speculation. Every simulated rupee follows transparent rules:
+            NIVARAN is built on explicit, verifiable financial principles rather than opaque black-box speculation. Every simulated rupee follows transparent rules:
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">

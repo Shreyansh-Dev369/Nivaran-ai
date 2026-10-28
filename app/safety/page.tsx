@@ -18,7 +18,7 @@ export default function SafetyPage() {
     {
       index: "01",
       title: "Zero Real Capital Transferred",
-      desc: "NIVARA does not connect to actual banking gateways, NEFT/RTGS, or UPI payment rails. All portfolio balances, simulated investments, and cash ledger top-ups operate within an isolated, deterministic browser database.",
+      desc: "NIVARAN does not connect to actual banking gateways, NEFT/RTGS, or UPI payment rails. All portfolio balances, simulated investments, and cash ledger top-ups operate within an isolated, deterministic browser database.",
       tag: "DEMO LEDGER ONLY",
     },
     {
@@ -36,7 +36,7 @@ export default function SafetyPage() {
     {
       index: "04",
       title: "Educational Purpose & Regulatory Transparency",
-      desc: "NIVARA is an academic engineering capstone project designed to demonstrate intuitive wealth-management UX and explainable rules-based portfolio generation. It does not provide personalized investment advice and is not registered with SEBI.",
+      desc: "NIVARAN is an academic engineering capstone project designed to demonstrate intuitive wealth-management UX and explainable rules-based portfolio generation. It does not provide personalized investment advice and is not registered with SEBI.",
       tag: "ACADEMIC SCOPE",
     },
   ];

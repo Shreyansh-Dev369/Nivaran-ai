@@ -400,7 +400,7 @@ export function CommandPalette({
             <span>↵ Select</span>
             <span>Esc Close</span>
           </div>
-          <span>NIVARA Global Command Bar</span>
+          <span>NIVARAN Global Command Bar</span>
         </div>
       </motion.div>
     </div>

@@ -49,7 +49,7 @@ export function BrandLogo({
             inverted ? "text-white" : "text-[#071912]"
           }`}
         >
-          NIVARA
+          NIVARAN
         </span>
         {showSubtitle && (
           <span

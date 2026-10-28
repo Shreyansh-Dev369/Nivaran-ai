@@ -267,7 +267,7 @@ export function StockDetailClient({ symbol }: { symbol: string }) {
           {activeTab === "RATIONALE" && (
             <div className="p-4 rounded-2xl bg-[#F4FAF7] border border-[#D3E5DC] space-y-2">
               <h4 className="font-serif text-base text-[#071912] font-semibold">
-                Why NIVARA Algorithms Include {stock.name}
+                Why NIVARAN Algorithms Include {stock.name}
               </h4>
               <p className="text-xs text-[#4B665A] leading-relaxed">
                 {stock.selectionRationale}

@@ -60,7 +60,7 @@ export function PublicFooter() {
               Academic Project Notice
             </h4>
             <p className="text-[11px] text-[#587F6E] leading-relaxed">
-              NIVARA is built strictly for educational evaluation. Securities referenced (such as Reliance, TCS, HDFC Bank, Infosys, and L&T) are illustrative samples.
+              NIVARAN is built strictly for educational evaluation. Securities referenced (such as Reliance, TCS, HDFC Bank, Infosys, and L&T) are illustrative samples.
             </p>
             <p className="text-[11px] text-[#587F6E] leading-relaxed">
               Not registered with SEBI. No real orders are routed, no real funds are accepted, and no guaranteed returns are promised.
@@ -70,7 +70,7 @@ export function PublicFooter() {
 
         {/* Bottom Colophon Bar */}
         <div className="mt-12 pt-6 border-t border-[#D3E5DC] flex flex-col sm:flex-row items-center justify-between text-[11px] font-mono text-[#587F6E] gap-4">
-          <p>© 2026 NIVARA Technologies. Academic Demonstration.</p>
+          <p>© 2026 NIVARAN Technologies. Academic Demonstration.</p>
           <div className="flex gap-6">
             <Link href="/safety" className="hover:text-[#071912]">Privacy Notice</Link>
             <Link href="/safety" className="hover:text-[#071912]">Terms of Simulation</Link>
